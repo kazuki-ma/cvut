@@ -1,662 +1,710 @@
 #ifndef __CVUT_COLOR_X11__
 #define __CVUT_COLOR_X11__ 1
 
-#define CVUT_COLOR_SNOW            cv::Vec3b(0xFF, 0xFA, 0xFA)
-#define CVUT_COLOR_GHOSTWHITE      cv::Vec3b(0xF8, 0xF8, 0xFF)
-#define CVUT_COLOR_WHITESMOKE      cv::Vec3b(0xF5, 0xF5, 0xF5)
-#define CVUT_COLOR_GAINSBORO       cv::Vec3b(0xDC, 0xDC, 0xDC)
-#define CVUT_COLOR_FLORALWHITE     cv::Vec3b(0xFF, 0xFA, 0xF0)
-#define CVUT_COLOR_OLDLACE         cv::Vec3b(0xFD, 0xF5, 0xE6)
-#define CVUT_COLOR_LINEN           cv::Vec3b(0xFA, 0xF0, 0xE6)
-#define CVUT_COLOR_ANTIQUEWHITE    cv::Vec3b(0xFA, 0xEB, 0xD7)
-#define CVUT_COLOR_PAPAYAWHIP      cv::Vec3b(0xFF, 0xEF, 0xD5)
-#define CVUT_COLOR_BLANCHEDALMOND  cv::Vec3b(0xFF, 0xEB, 0xCD)
-#define CVUT_COLOR_BISQUE          cv::Vec3b(0xFF, 0xE4, 0xC4)
-#define CVUT_COLOR_PEACHPUFF       cv::Vec3b(0xFF, 0xDA, 0xB9)
-#define CVUT_COLOR_NAVAJOWHITE     cv::Vec3b(0xFF, 0xDE, 0xAD)
-#define CVUT_COLOR_MOCCASIN        cv::Vec3b(0xFF, 0xE4, 0xB5)
-#define CVUT_COLOR_CORNSILK        cv::Vec3b(0xFF, 0xF8, 0xDC)
-#define CVUT_COLOR_IVORY           cv::Vec3b(0xFF, 0xFF, 0xF0)
-#define CVUT_COLOR_LEMONCHIFFON    cv::Vec3b(0xFF, 0xFA, 0xCD)
-#define CVUT_COLOR_SEASHELL        cv::Vec3b(0xFF, 0xF5, 0xEE)
-#define CVUT_COLOR_HONEYDEW        cv::Vec3b(0xF0, 0xFF, 0xF0)
-#define CVUT_COLOR_MINTCREAM       cv::Vec3b(0xF5, 0xFF, 0xFA)
-#define CVUT_COLOR_AZURE           cv::Vec3b(0xF0, 0xFF, 0xFF)
-#define CVUT_COLOR_ALICEBLUE       cv::Vec3b(0xF0, 0xF8, 0xFF)
-#define CVUT_COLOR_LAVENDER        cv::Vec3b(0xE6, 0xE6, 0xFA)
-#define CVUT_COLOR_LAVENDERBLUSH   cv::Vec3b(0xFF, 0xF0, 0xF5)
-#define CVUT_COLOR_MISTYROSE       cv::Vec3b(0xFF, 0xE4, 0xE1)
-#define CVUT_COLOR_WHITE           cv::Vec3b(0xFF, 0xFF, 0xFF)
-#define CVUT_COLOR_BLACK           cv::Vec3b(0x00, 0x00, 0x00)
-#define CVUT_COLOR_DARKSLATEGRAY   cv::Vec3b(0x2F, 0x4F, 0x4F)
-#define CVUT_COLOR_DARKSLATEGREY   cv::Vec3b(0x2F, 0x4F, 0x4F)
-#define CVUT_COLOR_DIMGRAY         cv::Vec3b(0x69, 0x69, 0x69)
-#define CVUT_COLOR_DIMGREY         cv::Vec3b(0x69, 0x69, 0x69)
-#define CVUT_COLOR_SLATEGRAY       cv::Vec3b(0x70, 0x80, 0x90)
-#define CVUT_COLOR_SLATEGREY       cv::Vec3b(0x70, 0x80, 0x90)
-#define CVUT_COLOR_LIGHTSLATEGRAY  cv::Vec3b(0x77, 0x88, 0x99)
-#define CVUT_COLOR_LIGHTSLATEGREY  cv::Vec3b(0x77, 0x88, 0x99)
-#define CVUT_COLOR_GRAY            cv::Vec3b(0xBE, 0xBE, 0xBE)
-#define CVUT_COLOR_GREY            cv::Vec3b(0xBE, 0xBE, 0xBE)
-#define CVUT_COLOR_LIGHTGREY       cv::Vec3b(0xD3, 0xD3, 0xD3)
-#define CVUT_COLOR_LIGHTGRAY       cv::Vec3b(0xD3, 0xD3, 0xD3)
-#define CVUT_COLOR_MIDNIGHTBLUE    cv::Vec3b(0x19, 0x19, 0x70)
-#define CVUT_COLOR_NAVY            cv::Vec3b(0x00, 0x00, 0x80)
-#define CVUT_COLOR_NAVYBLUE        cv::Vec3b(0x00, 0x00, 0x80)
-#define CVUT_COLOR_CORNFLOWERBLUE  cv::Vec3b(0x64, 0x95, 0xED)
-#define CVUT_COLOR_DARKSLATEBLUE   cv::Vec3b(0x48, 0x3D, 0x8B)
-#define CVUT_COLOR_SLATEBLUE       cv::Vec3b(0x6A, 0x5A, 0xCD)
-#define CVUT_COLOR_MEDIUMSLATEBLUE  cv::Vec3b(0x7B, 0x68, 0xEE)
-#define CVUT_COLOR_LIGHTSLATEBLUE  cv::Vec3b(0x84, 0x70, 0xFF)
-#define CVUT_COLOR_MEDIUMBLUE      cv::Vec3b(0x00, 0x00, 0xCD)
-#define CVUT_COLOR_ROYALBLUE       cv::Vec3b(0x41, 0x69, 0xE1)
-#define CVUT_COLOR_BLUE            cv::Vec3b(0x00, 0x00, 0xFF)
-#define CVUT_COLOR_DODGERBLUE      cv::Vec3b(0x1E, 0x90, 0xFF)
-#define CVUT_COLOR_DEEPSKYBLUE     cv::Vec3b(0x00, 0xBF, 0xFF)
-#define CVUT_COLOR_SKYBLUE         cv::Vec3b(0x87, 0xCE, 0xEB)
-#define CVUT_COLOR_LIGHTSKYBLUE    cv::Vec3b(0x87, 0xCE, 0xFA)
-#define CVUT_COLOR_STEELBLUE       cv::Vec3b(0x46, 0x82, 0xB4)
-#define CVUT_COLOR_LIGHTSTEELBLUE  cv::Vec3b(0xB0, 0xC4, 0xDE)
-#define CVUT_COLOR_LIGHTBLUE       cv::Vec3b(0xAD, 0xD8, 0xE6)
-#define CVUT_COLOR_POWDERBLUE      cv::Vec3b(0xB0, 0xE0, 0xE6)
-#define CVUT_COLOR_PALETURQUOISE   cv::Vec3b(0xAF, 0xEE, 0xEE)
-#define CVUT_COLOR_DARKTURQUOISE   cv::Vec3b(0x00, 0xCE, 0xD1)
-#define CVUT_COLOR_MEDIUMTURQUOISE  cv::Vec3b(0x48, 0xD1, 0xCC)
-#define CVUT_COLOR_TURQUOISE       cv::Vec3b(0x40, 0xE0, 0xD0)
-#define CVUT_COLOR_CYAN            cv::Vec3b(0x00, 0xFF, 0xFF)
-#define CVUT_COLOR_LIGHTCYAN       cv::Vec3b(0xE0, 0xFF, 0xFF)
-#define CVUT_COLOR_CADETBLUE       cv::Vec3b(0x5F, 0x9E, 0xA0)
-#define CVUT_COLOR_MEDIUMAQUAMARINE  cv::Vec3b(0x66, 0xCD, 0xAA)
-#define CVUT_COLOR_AQUAMARINE      cv::Vec3b(0x7F, 0xFF, 0xD4)
-#define CVUT_COLOR_DARKGREEN       cv::Vec3b(0x00, 0x64, 0x00)
-#define CVUT_COLOR_DARKOLIVEGREEN  cv::Vec3b(0x55, 0x6B, 0x2F)
-#define CVUT_COLOR_DARKSEAGREEN    cv::Vec3b(0x8F, 0xBC, 0x8F)
-#define CVUT_COLOR_SEAGREEN        cv::Vec3b(0x2E, 0x8B, 0x57)
-#define CVUT_COLOR_MEDIUMSEAGREEN  cv::Vec3b(0x3C, 0xB3, 0x71)
-#define CVUT_COLOR_LIGHTSEAGREEN   cv::Vec3b(0x20, 0xB2, 0xAA)
-#define CVUT_COLOR_PALEGREEN       cv::Vec3b(0x98, 0xFB, 0x98)
-#define CVUT_COLOR_SPRINGGREEN     cv::Vec3b(0x00, 0xFF, 0x7F)
-#define CVUT_COLOR_LAWNGREEN       cv::Vec3b(0x7C, 0xFC, 0x00)
-#define CVUT_COLOR_GREEN           cv::Vec3b(0x00, 0xFF, 0x00)
-#define CVUT_COLOR_CHARTREUSE      cv::Vec3b(0x7F, 0xFF, 0x00)
-#define CVUT_COLOR_MEDIUMSPRINGGREEN  cv::Vec3b(0x00, 0xFA, 0x9A)
-#define CVUT_COLOR_GREENYELLOW     cv::Vec3b(0xAD, 0xFF, 0x2F)
-#define CVUT_COLOR_LIMEGREEN       cv::Vec3b(0x32, 0xCD, 0x32)
-#define CVUT_COLOR_YELLOWGREEN     cv::Vec3b(0x9A, 0xCD, 0x32)
-#define CVUT_COLOR_FORESTGREEN     cv::Vec3b(0x22, 0x8B, 0x22)
-#define CVUT_COLOR_OLIVEDRAB       cv::Vec3b(0x6B, 0x8E, 0x23)
-#define CVUT_COLOR_DARKKHAKI       cv::Vec3b(0xBD, 0xB7, 0x6B)
-#define CVUT_COLOR_KHAKI           cv::Vec3b(0xF0, 0xE6, 0x8C)
-#define CVUT_COLOR_PALEGOLDENROD   cv::Vec3b(0xEE, 0xE8, 0xAA)
-#define CVUT_COLOR_LIGHTGOLDENRODYELLOW  cv::Vec3b(0xFA, 0xFA, 0xD2)
-#define CVUT_COLOR_LIGHTYELLOW     cv::Vec3b(0xFF, 0xFF, 0xE0)
-#define CVUT_COLOR_YELLOW          cv::Vec3b(0xFF, 0xFF, 0x00)
-#define CVUT_COLOR_GOLD            cv::Vec3b(0xFF, 0xD7, 0x00)
-#define CVUT_COLOR_LIGHTGOLDENROD  cv::Vec3b(0xEE, 0xDD, 0x82)
-#define CVUT_COLOR_GOLDENROD       cv::Vec3b(0xDA, 0xA5, 0x20)
-#define CVUT_COLOR_DARKGOLDENROD   cv::Vec3b(0xB8, 0x86, 0x0B)
-#define CVUT_COLOR_ROSYBROWN       cv::Vec3b(0xBC, 0x8F, 0x8F)
-#define CVUT_COLOR_INDIANRED       cv::Vec3b(0xCD, 0x5C, 0x5C)
-#define CVUT_COLOR_SADDLEBROWN     cv::Vec3b(0x8B, 0x45, 0x13)
-#define CVUT_COLOR_SIENNA          cv::Vec3b(0xA0, 0x52, 0x2D)
-#define CVUT_COLOR_PERU            cv::Vec3b(0xCD, 0x85, 0x3F)
-#define CVUT_COLOR_BURLYWOOD       cv::Vec3b(0xDE, 0xB8, 0x87)
-#define CVUT_COLOR_BEIGE           cv::Vec3b(0xF5, 0xF5, 0xDC)
-#define CVUT_COLOR_WHEAT           cv::Vec3b(0xF5, 0xDE, 0xB3)
-#define CVUT_COLOR_SANDYBROWN      cv::Vec3b(0xF4, 0xA4, 0x60)
-#define CVUT_COLOR_TAN             cv::Vec3b(0xD2, 0xB4, 0x8C)
-#define CVUT_COLOR_CHOCOLATE       cv::Vec3b(0xD2, 0x69, 0x1E)
-#define CVUT_COLOR_FIREBRICK       cv::Vec3b(0xB2, 0x22, 0x22)
-#define CVUT_COLOR_BROWN           cv::Vec3b(0xA5, 0x2A, 0x2A)
-#define CVUT_COLOR_DARKSALMON      cv::Vec3b(0xE9, 0x96, 0x7A)
-#define CVUT_COLOR_SALMON          cv::Vec3b(0xFA, 0x80, 0x72)
-#define CVUT_COLOR_LIGHTSALMON     cv::Vec3b(0xFF, 0xA0, 0x7A)
-#define CVUT_COLOR_ORANGE          cv::Vec3b(0xFF, 0xA5, 0x00)
-#define CVUT_COLOR_DARKORANGE      cv::Vec3b(0xFF, 0x8C, 0x00)
-#define CVUT_COLOR_CORAL           cv::Vec3b(0xFF, 0x7F, 0x50)
-#define CVUT_COLOR_LIGHTCORAL      cv::Vec3b(0xF0, 0x80, 0x80)
-#define CVUT_COLOR_TOMATO          cv::Vec3b(0xFF, 0x63, 0x47)
-#define CVUT_COLOR_ORANGERED       cv::Vec3b(0xFF, 0x45, 0x00)
-#define CVUT_COLOR_RED             cv::Vec3b(0xFF, 0x00, 0x00)
-#define CVUT_COLOR_HOTPINK         cv::Vec3b(0xFF, 0x69, 0xB4)
-#define CVUT_COLOR_DEEPPINK        cv::Vec3b(0xFF, 0x14, 0x93)
-#define CVUT_COLOR_PINK            cv::Vec3b(0xFF, 0xC0, 0xCB)
-#define CVUT_COLOR_LIGHTPINK       cv::Vec3b(0xFF, 0xB6, 0xC1)
-#define CVUT_COLOR_PALEVIOLETRED   cv::Vec3b(0xDB, 0x70, 0x93)
-#define CVUT_COLOR_MAROON          cv::Vec3b(0xB0, 0x30, 0x60)
-#define CVUT_COLOR_MEDIUMVIOLETRED  cv::Vec3b(0xC7, 0x15, 0x85)
-#define CVUT_COLOR_VIOLETRED       cv::Vec3b(0xD0, 0x20, 0x90)
-#define CVUT_COLOR_MAGENTA         cv::Vec3b(0xFF, 0x00, 0xFF)
-#define CVUT_COLOR_VIOLET          cv::Vec3b(0xEE, 0x82, 0xEE)
-#define CVUT_COLOR_PLUM            cv::Vec3b(0xDD, 0xA0, 0xDD)
-#define CVUT_COLOR_ORCHID          cv::Vec3b(0xDA, 0x70, 0xD6)
-#define CVUT_COLOR_MEDIUMORCHID    cv::Vec3b(0xBA, 0x55, 0xD3)
-#define CVUT_COLOR_DARKORCHID      cv::Vec3b(0x99, 0x32, 0xCC)
-#define CVUT_COLOR_DARKVIOLET      cv::Vec3b(0x94, 0x00, 0xD3)
-#define CVUT_COLOR_BLUEVIOLET      cv::Vec3b(0x8A, 0x2B, 0xE2)
-#define CVUT_COLOR_PURPLE          cv::Vec3b(0xA0, 0x20, 0xF0)
-#define CVUT_COLOR_MEDIUMPURPLE    cv::Vec3b(0x93, 0x70, 0xDB)
-#define CVUT_COLOR_THISTLE         cv::Vec3b(0xD8, 0xBF, 0xD8)
-#define CVUT_COLOR_SNOW1           cv::Vec3b(0xFF, 0xFA, 0xFA)
-#define CVUT_COLOR_SNOW2           cv::Vec3b(0xEE, 0xE9, 0xE9)
-#define CVUT_COLOR_SNOW3           cv::Vec3b(0xCD, 0xC9, 0xC9)
-#define CVUT_COLOR_SNOW4           cv::Vec3b(0x8B, 0x89, 0x89)
-#define CVUT_COLOR_SEASHELL1       cv::Vec3b(0xFF, 0xF5, 0xEE)
-#define CVUT_COLOR_SEASHELL2       cv::Vec3b(0xEE, 0xE5, 0xDE)
-#define CVUT_COLOR_SEASHELL3       cv::Vec3b(0xCD, 0xC5, 0xBF)
-#define CVUT_COLOR_SEASHELL4       cv::Vec3b(0x8B, 0x86, 0x82)
-#define CVUT_COLOR_ANTIQUEWHITE1   cv::Vec3b(0xFF, 0xEF, 0xDB)
-#define CVUT_COLOR_ANTIQUEWHITE2   cv::Vec3b(0xEE, 0xDF, 0xCC)
-#define CVUT_COLOR_ANTIQUEWHITE3   cv::Vec3b(0xCD, 0xC0, 0xB0)
-#define CVUT_COLOR_ANTIQUEWHITE4   cv::Vec3b(0x8B, 0x83, 0x78)
-#define CVUT_COLOR_BISQUE1         cv::Vec3b(0xFF, 0xE4, 0xC4)
-#define CVUT_COLOR_BISQUE2         cv::Vec3b(0xEE, 0xD5, 0xB7)
-#define CVUT_COLOR_BISQUE3         cv::Vec3b(0xCD, 0xB7, 0x9E)
-#define CVUT_COLOR_BISQUE4         cv::Vec3b(0x8B, 0x7D, 0x6B)
-#define CVUT_COLOR_PEACHPUFF1      cv::Vec3b(0xFF, 0xDA, 0xB9)
-#define CVUT_COLOR_PEACHPUFF2      cv::Vec3b(0xEE, 0xCB, 0xAD)
-#define CVUT_COLOR_PEACHPUFF3      cv::Vec3b(0xCD, 0xAF, 0x95)
-#define CVUT_COLOR_PEACHPUFF4      cv::Vec3b(0x8B, 0x77, 0x65)
-#define CVUT_COLOR_NAVAJOWHITE1    cv::Vec3b(0xFF, 0xDE, 0xAD)
-#define CVUT_COLOR_NAVAJOWHITE2    cv::Vec3b(0xEE, 0xCF, 0xA1)
-#define CVUT_COLOR_NAVAJOWHITE3    cv::Vec3b(0xCD, 0xB3, 0x8B)
-#define CVUT_COLOR_NAVAJOWHITE4    cv::Vec3b(0x8B, 0x79, 0x5E)
-#define CVUT_COLOR_LEMONCHIFFON1   cv::Vec3b(0xFF, 0xFA, 0xCD)
-#define CVUT_COLOR_LEMONCHIFFON2   cv::Vec3b(0xEE, 0xE9, 0xBF)
-#define CVUT_COLOR_LEMONCHIFFON3   cv::Vec3b(0xCD, 0xC9, 0xA5)
-#define CVUT_COLOR_LEMONCHIFFON4   cv::Vec3b(0x8B, 0x89, 0x70)
-#define CVUT_COLOR_CORNSILK1       cv::Vec3b(0xFF, 0xF8, 0xDC)
-#define CVUT_COLOR_CORNSILK2       cv::Vec3b(0xEE, 0xE8, 0xCD)
-#define CVUT_COLOR_CORNSILK3       cv::Vec3b(0xCD, 0xC8, 0xB1)
-#define CVUT_COLOR_CORNSILK4       cv::Vec3b(0x8B, 0x88, 0x78)
-#define CVUT_COLOR_IVORY1          cv::Vec3b(0xFF, 0xFF, 0xF0)
-#define CVUT_COLOR_IVORY2          cv::Vec3b(0xEE, 0xEE, 0xE0)
-#define CVUT_COLOR_IVORY3          cv::Vec3b(0xCD, 0xCD, 0xC1)
-#define CVUT_COLOR_IVORY4          cv::Vec3b(0x8B, 0x8B, 0x83)
-#define CVUT_COLOR_HONEYDEW1       cv::Vec3b(0xF0, 0xFF, 0xF0)
-#define CVUT_COLOR_HONEYDEW2       cv::Vec3b(0xE0, 0xEE, 0xE0)
-#define CVUT_COLOR_HONEYDEW3       cv::Vec3b(0xC1, 0xCD, 0xC1)
-#define CVUT_COLOR_HONEYDEW4       cv::Vec3b(0x83, 0x8B, 0x83)
-#define CVUT_COLOR_LAVENDERBLUSH1  cv::Vec3b(0xFF, 0xF0, 0xF5)
-#define CVUT_COLOR_LAVENDERBLUSH2  cv::Vec3b(0xEE, 0xE0, 0xE5)
-#define CVUT_COLOR_LAVENDERBLUSH3  cv::Vec3b(0xCD, 0xC1, 0xC5)
-#define CVUT_COLOR_LAVENDERBLUSH4  cv::Vec3b(0x8B, 0x83, 0x86)
-#define CVUT_COLOR_MISTYROSE1      cv::Vec3b(0xFF, 0xE4, 0xE1)
-#define CVUT_COLOR_MISTYROSE2      cv::Vec3b(0xEE, 0xD5, 0xD2)
-#define CVUT_COLOR_MISTYROSE3      cv::Vec3b(0xCD, 0xB7, 0xB5)
-#define CVUT_COLOR_MISTYROSE4      cv::Vec3b(0x8B, 0x7D, 0x7B)
-#define CVUT_COLOR_AZURE1          cv::Vec3b(0xF0, 0xFF, 0xFF)
-#define CVUT_COLOR_AZURE2          cv::Vec3b(0xE0, 0xEE, 0xEE)
-#define CVUT_COLOR_AZURE3          cv::Vec3b(0xC1, 0xCD, 0xCD)
-#define CVUT_COLOR_AZURE4          cv::Vec3b(0x83, 0x8B, 0x8B)
-#define CVUT_COLOR_SLATEBLUE1      cv::Vec3b(0x83, 0x6F, 0xFF)
-#define CVUT_COLOR_SLATEBLUE2      cv::Vec3b(0x7A, 0x67, 0xEE)
-#define CVUT_COLOR_SLATEBLUE3      cv::Vec3b(0x69, 0x59, 0xCD)
-#define CVUT_COLOR_SLATEBLUE4      cv::Vec3b(0x47, 0x3C, 0x8B)
-#define CVUT_COLOR_ROYALBLUE1      cv::Vec3b(0x48, 0x76, 0xFF)
-#define CVUT_COLOR_ROYALBLUE2      cv::Vec3b(0x43, 0x6E, 0xEE)
-#define CVUT_COLOR_ROYALBLUE3      cv::Vec3b(0x3A, 0x5F, 0xCD)
-#define CVUT_COLOR_ROYALBLUE4      cv::Vec3b(0x27, 0x40, 0x8B)
-#define CVUT_COLOR_BLUE1           cv::Vec3b(0x00, 0x00, 0xFF)
-#define CVUT_COLOR_BLUE2           cv::Vec3b(0x00, 0x00, 0xEE)
-#define CVUT_COLOR_BLUE3           cv::Vec3b(0x00, 0x00, 0xCD)
-#define CVUT_COLOR_BLUE4           cv::Vec3b(0x00, 0x00, 0x8B)
-#define CVUT_COLOR_DODGERBLUE1     cv::Vec3b(0x1E, 0x90, 0xFF)
-#define CVUT_COLOR_DODGERBLUE2     cv::Vec3b(0x1C, 0x86, 0xEE)
-#define CVUT_COLOR_DODGERBLUE3     cv::Vec3b(0x18, 0x74, 0xCD)
-#define CVUT_COLOR_DODGERBLUE4     cv::Vec3b(0x10, 0x4E, 0x8B)
-#define CVUT_COLOR_STEELBLUE1      cv::Vec3b(0x63, 0xB8, 0xFF)
-#define CVUT_COLOR_STEELBLUE2      cv::Vec3b(0x5C, 0xAC, 0xEE)
-#define CVUT_COLOR_STEELBLUE3      cv::Vec3b(0x4F, 0x94, 0xCD)
-#define CVUT_COLOR_STEELBLUE4      cv::Vec3b(0x36, 0x64, 0x8B)
-#define CVUT_COLOR_DEEPSKYBLUE1    cv::Vec3b(0x00, 0xBF, 0xFF)
-#define CVUT_COLOR_DEEPSKYBLUE2    cv::Vec3b(0x00, 0xB2, 0xEE)
-#define CVUT_COLOR_DEEPSKYBLUE3    cv::Vec3b(0x00, 0x9A, 0xCD)
-#define CVUT_COLOR_DEEPSKYBLUE4    cv::Vec3b(0x00, 0x68, 0x8B)
-#define CVUT_COLOR_SKYBLUE1        cv::Vec3b(0x87, 0xCE, 0xFF)
-#define CVUT_COLOR_SKYBLUE2        cv::Vec3b(0x7E, 0xC0, 0xEE)
-#define CVUT_COLOR_SKYBLUE3        cv::Vec3b(0x6C, 0xA6, 0xCD)
-#define CVUT_COLOR_SKYBLUE4        cv::Vec3b(0x4A, 0x70, 0x8B)
-#define CVUT_COLOR_LIGHTSKYBLUE1   cv::Vec3b(0xB0, 0xE2, 0xFF)
-#define CVUT_COLOR_LIGHTSKYBLUE2   cv::Vec3b(0xA4, 0xD3, 0xEE)
-#define CVUT_COLOR_LIGHTSKYBLUE3   cv::Vec3b(0x8D, 0xB6, 0xCD)
-#define CVUT_COLOR_LIGHTSKYBLUE4   cv::Vec3b(0x60, 0x7B, 0x8B)
-#define CVUT_COLOR_SLATEGRAY1      cv::Vec3b(0xC6, 0xE2, 0xFF)
-#define CVUT_COLOR_SLATEGRAY2      cv::Vec3b(0xB9, 0xD3, 0xEE)
-#define CVUT_COLOR_SLATEGRAY3      cv::Vec3b(0x9F, 0xB6, 0xCD)
-#define CVUT_COLOR_SLATEGRAY4      cv::Vec3b(0x6C, 0x7B, 0x8B)
-#define CVUT_COLOR_LIGHTSTEELBLUE1  cv::Vec3b(0xCA, 0xE1, 0xFF)
-#define CVUT_COLOR_LIGHTSTEELBLUE2  cv::Vec3b(0xBC, 0xD2, 0xEE)
-#define CVUT_COLOR_LIGHTSTEELBLUE3  cv::Vec3b(0xA2, 0xB5, 0xCD)
-#define CVUT_COLOR_LIGHTSTEELBLUE4  cv::Vec3b(0x6E, 0x7B, 0x8B)
-#define CVUT_COLOR_LIGHTBLUE1      cv::Vec3b(0xBF, 0xEF, 0xFF)
-#define CVUT_COLOR_LIGHTBLUE2      cv::Vec3b(0xB2, 0xDF, 0xEE)
-#define CVUT_COLOR_LIGHTBLUE3      cv::Vec3b(0x9A, 0xC0, 0xCD)
-#define CVUT_COLOR_LIGHTBLUE4      cv::Vec3b(0x68, 0x83, 0x8B)
-#define CVUT_COLOR_LIGHTCYAN1      cv::Vec3b(0xE0, 0xFF, 0xFF)
-#define CVUT_COLOR_LIGHTCYAN2      cv::Vec3b(0xD1, 0xEE, 0xEE)
-#define CVUT_COLOR_LIGHTCYAN3      cv::Vec3b(0xB4, 0xCD, 0xCD)
-#define CVUT_COLOR_LIGHTCYAN4      cv::Vec3b(0x7A, 0x8B, 0x8B)
-#define CVUT_COLOR_PALETURQUOISE1  cv::Vec3b(0xBB, 0xFF, 0xFF)
-#define CVUT_COLOR_PALETURQUOISE2  cv::Vec3b(0xAE, 0xEE, 0xEE)
-#define CVUT_COLOR_PALETURQUOISE3  cv::Vec3b(0x96, 0xCD, 0xCD)
-#define CVUT_COLOR_PALETURQUOISE4  cv::Vec3b(0x66, 0x8B, 0x8B)
-#define CVUT_COLOR_CADETBLUE1      cv::Vec3b(0x98, 0xF5, 0xFF)
-#define CVUT_COLOR_CADETBLUE2      cv::Vec3b(0x8E, 0xE5, 0xEE)
-#define CVUT_COLOR_CADETBLUE3      cv::Vec3b(0x7A, 0xC5, 0xCD)
-#define CVUT_COLOR_CADETBLUE4      cv::Vec3b(0x53, 0x86, 0x8B)
-#define CVUT_COLOR_TURQUOISE1      cv::Vec3b(0x00, 0xF5, 0xFF)
-#define CVUT_COLOR_TURQUOISE2      cv::Vec3b(0x00, 0xE5, 0xEE)
-#define CVUT_COLOR_TURQUOISE3      cv::Vec3b(0x00, 0xC5, 0xCD)
-#define CVUT_COLOR_TURQUOISE4      cv::Vec3b(0x00, 0x86, 0x8B)
-#define CVUT_COLOR_CYAN1           cv::Vec3b(0x00, 0xFF, 0xFF)
-#define CVUT_COLOR_CYAN2           cv::Vec3b(0x00, 0xEE, 0xEE)
-#define CVUT_COLOR_CYAN3           cv::Vec3b(0x00, 0xCD, 0xCD)
-#define CVUT_COLOR_CYAN4           cv::Vec3b(0x00, 0x8B, 0x8B)
-#define CVUT_COLOR_DARKSLATEGRAY1  cv::Vec3b(0x97, 0xFF, 0xFF)
-#define CVUT_COLOR_DARKSLATEGRAY2  cv::Vec3b(0x8D, 0xEE, 0xEE)
-#define CVUT_COLOR_DARKSLATEGRAY3  cv::Vec3b(0x79, 0xCD, 0xCD)
-#define CVUT_COLOR_DARKSLATEGRAY4  cv::Vec3b(0x52, 0x8B, 0x8B)
-#define CVUT_COLOR_AQUAMARINE1     cv::Vec3b(0x7F, 0xFF, 0xD4)
-#define CVUT_COLOR_AQUAMARINE2     cv::Vec3b(0x76, 0xEE, 0xC6)
-#define CVUT_COLOR_AQUAMARINE3     cv::Vec3b(0x66, 0xCD, 0xAA)
-#define CVUT_COLOR_AQUAMARINE4     cv::Vec3b(0x45, 0x8B, 0x74)
-#define CVUT_COLOR_DARKSEAGREEN1   cv::Vec3b(0xC1, 0xFF, 0xC1)
-#define CVUT_COLOR_DARKSEAGREEN2   cv::Vec3b(0xB4, 0xEE, 0xB4)
-#define CVUT_COLOR_DARKSEAGREEN3   cv::Vec3b(0x9B, 0xCD, 0x9B)
-#define CVUT_COLOR_DARKSEAGREEN4   cv::Vec3b(0x69, 0x8B, 0x69)
-#define CVUT_COLOR_SEAGREEN1       cv::Vec3b(0x54, 0xFF, 0x9F)
-#define CVUT_COLOR_SEAGREEN2       cv::Vec3b(0x4E, 0xEE, 0x94)
-#define CVUT_COLOR_SEAGREEN3       cv::Vec3b(0x43, 0xCD, 0x80)
-#define CVUT_COLOR_SEAGREEN4       cv::Vec3b(0x2E, 0x8B, 0x57)
-#define CVUT_COLOR_PALEGREEN1      cv::Vec3b(0x9A, 0xFF, 0x9A)
-#define CVUT_COLOR_PALEGREEN2      cv::Vec3b(0x90, 0xEE, 0x90)
-#define CVUT_COLOR_PALEGREEN3      cv::Vec3b(0x7C, 0xCD, 0x7C)
-#define CVUT_COLOR_PALEGREEN4      cv::Vec3b(0x54, 0x8B, 0x54)
-#define CVUT_COLOR_SPRINGGREEN1    cv::Vec3b(0x00, 0xFF, 0x7F)
-#define CVUT_COLOR_SPRINGGREEN2    cv::Vec3b(0x00, 0xEE, 0x76)
-#define CVUT_COLOR_SPRINGGREEN3    cv::Vec3b(0x00, 0xCD, 0x66)
-#define CVUT_COLOR_SPRINGGREEN4    cv::Vec3b(0x00, 0x8B, 0x45)
-#define CVUT_COLOR_GREEN1          cv::Vec3b(0x00, 0xFF, 0x00)
-#define CVUT_COLOR_GREEN2          cv::Vec3b(0x00, 0xEE, 0x00)
-#define CVUT_COLOR_GREEN3          cv::Vec3b(0x00, 0xCD, 0x00)
-#define CVUT_COLOR_GREEN4          cv::Vec3b(0x00, 0x8B, 0x00)
-#define CVUT_COLOR_CHARTREUSE1     cv::Vec3b(0x7F, 0xFF, 0x00)
-#define CVUT_COLOR_CHARTREUSE2     cv::Vec3b(0x76, 0xEE, 0x00)
-#define CVUT_COLOR_CHARTREUSE3     cv::Vec3b(0x66, 0xCD, 0x00)
-#define CVUT_COLOR_CHARTREUSE4     cv::Vec3b(0x45, 0x8B, 0x00)
-#define CVUT_COLOR_OLIVEDRAB1      cv::Vec3b(0xC0, 0xFF, 0x3E)
-#define CVUT_COLOR_OLIVEDRAB2      cv::Vec3b(0xB3, 0xEE, 0x3A)
-#define CVUT_COLOR_OLIVEDRAB3      cv::Vec3b(0x9A, 0xCD, 0x32)
-#define CVUT_COLOR_OLIVEDRAB4      cv::Vec3b(0x69, 0x8B, 0x22)
-#define CVUT_COLOR_DARKOLIVEGREEN1  cv::Vec3b(0xCA, 0xFF, 0x70)
-#define CVUT_COLOR_DARKOLIVEGREEN2  cv::Vec3b(0xBC, 0xEE, 0x68)
-#define CVUT_COLOR_DARKOLIVEGREEN3  cv::Vec3b(0xA2, 0xCD, 0x5A)
-#define CVUT_COLOR_DARKOLIVEGREEN4  cv::Vec3b(0x6E, 0x8B, 0x3D)
-#define CVUT_COLOR_KHAKI1          cv::Vec3b(0xFF, 0xF6, 0x8F)
-#define CVUT_COLOR_KHAKI2          cv::Vec3b(0xEE, 0xE6, 0x85)
-#define CVUT_COLOR_KHAKI3          cv::Vec3b(0xCD, 0xC6, 0x73)
-#define CVUT_COLOR_KHAKI4          cv::Vec3b(0x8B, 0x86, 0x4E)
-#define CVUT_COLOR_LIGHTGOLDENROD1  cv::Vec3b(0xFF, 0xEC, 0x8B)
-#define CVUT_COLOR_LIGHTGOLDENROD2  cv::Vec3b(0xEE, 0xDC, 0x82)
-#define CVUT_COLOR_LIGHTGOLDENROD3  cv::Vec3b(0xCD, 0xBE, 0x70)
-#define CVUT_COLOR_LIGHTGOLDENROD4  cv::Vec3b(0x8B, 0x81, 0x4C)
-#define CVUT_COLOR_LIGHTYELLOW1    cv::Vec3b(0xFF, 0xFF, 0xE0)
-#define CVUT_COLOR_LIGHTYELLOW2    cv::Vec3b(0xEE, 0xEE, 0xD1)
-#define CVUT_COLOR_LIGHTYELLOW3    cv::Vec3b(0xCD, 0xCD, 0xB4)
-#define CVUT_COLOR_LIGHTYELLOW4    cv::Vec3b(0x8B, 0x8B, 0x7A)
-#define CVUT_COLOR_YELLOW1         cv::Vec3b(0xFF, 0xFF, 0x00)
-#define CVUT_COLOR_YELLOW2         cv::Vec3b(0xEE, 0xEE, 0x00)
-#define CVUT_COLOR_YELLOW3         cv::Vec3b(0xCD, 0xCD, 0x00)
-#define CVUT_COLOR_YELLOW4         cv::Vec3b(0x8B, 0x8B, 0x00)
-#define CVUT_COLOR_GOLD1           cv::Vec3b(0xFF, 0xD7, 0x00)
-#define CVUT_COLOR_GOLD2           cv::Vec3b(0xEE, 0xC9, 0x00)
-#define CVUT_COLOR_GOLD3           cv::Vec3b(0xCD, 0xAD, 0x00)
-#define CVUT_COLOR_GOLD4           cv::Vec3b(0x8B, 0x75, 0x00)
-#define CVUT_COLOR_GOLDENROD1      cv::Vec3b(0xFF, 0xC1, 0x25)
-#define CVUT_COLOR_GOLDENROD2      cv::Vec3b(0xEE, 0xB4, 0x22)
-#define CVUT_COLOR_GOLDENROD3      cv::Vec3b(0xCD, 0x9B, 0x1D)
-#define CVUT_COLOR_GOLDENROD4      cv::Vec3b(0x8B, 0x69, 0x14)
-#define CVUT_COLOR_DARKGOLDENROD1  cv::Vec3b(0xFF, 0xB9, 0x0F)
-#define CVUT_COLOR_DARKGOLDENROD2  cv::Vec3b(0xEE, 0xAD, 0x0E)
-#define CVUT_COLOR_DARKGOLDENROD3  cv::Vec3b(0xCD, 0x95, 0x0C)
-#define CVUT_COLOR_DARKGOLDENROD4  cv::Vec3b(0x8B, 0x65, 0x08)
-#define CVUT_COLOR_ROSYBROWN1      cv::Vec3b(0xFF, 0xC1, 0xC1)
-#define CVUT_COLOR_ROSYBROWN2      cv::Vec3b(0xEE, 0xB4, 0xB4)
-#define CVUT_COLOR_ROSYBROWN3      cv::Vec3b(0xCD, 0x9B, 0x9B)
-#define CVUT_COLOR_ROSYBROWN4      cv::Vec3b(0x8B, 0x69, 0x69)
-#define CVUT_COLOR_INDIANRED1      cv::Vec3b(0xFF, 0x6A, 0x6A)
-#define CVUT_COLOR_INDIANRED2      cv::Vec3b(0xEE, 0x63, 0x63)
-#define CVUT_COLOR_INDIANRED3      cv::Vec3b(0xCD, 0x55, 0x55)
-#define CVUT_COLOR_INDIANRED4      cv::Vec3b(0x8B, 0x3A, 0x3A)
-#define CVUT_COLOR_SIENNA1         cv::Vec3b(0xFF, 0x82, 0x47)
-#define CVUT_COLOR_SIENNA2         cv::Vec3b(0xEE, 0x79, 0x42)
-#define CVUT_COLOR_SIENNA3         cv::Vec3b(0xCD, 0x68, 0x39)
-#define CVUT_COLOR_SIENNA4         cv::Vec3b(0x8B, 0x47, 0x26)
-#define CVUT_COLOR_BURLYWOOD1      cv::Vec3b(0xFF, 0xD3, 0x9B)
-#define CVUT_COLOR_BURLYWOOD2      cv::Vec3b(0xEE, 0xC5, 0x91)
-#define CVUT_COLOR_BURLYWOOD3      cv::Vec3b(0xCD, 0xAA, 0x7D)
-#define CVUT_COLOR_BURLYWOOD4      cv::Vec3b(0x8B, 0x73, 0x55)
-#define CVUT_COLOR_WHEAT1          cv::Vec3b(0xFF, 0xE7, 0xBA)
-#define CVUT_COLOR_WHEAT2          cv::Vec3b(0xEE, 0xD8, 0xAE)
-#define CVUT_COLOR_WHEAT3          cv::Vec3b(0xCD, 0xBA, 0x96)
-#define CVUT_COLOR_WHEAT4          cv::Vec3b(0x8B, 0x7E, 0x66)
-#define CVUT_COLOR_TAN1            cv::Vec3b(0xFF, 0xA5, 0x4F)
-#define CVUT_COLOR_TAN2            cv::Vec3b(0xEE, 0x9A, 0x49)
-#define CVUT_COLOR_TAN3            cv::Vec3b(0xCD, 0x85, 0x3F)
-#define CVUT_COLOR_TAN4            cv::Vec3b(0x8B, 0x5A, 0x2B)
-#define CVUT_COLOR_CHOCOLATE1      cv::Vec3b(0xFF, 0x7F, 0x24)
-#define CVUT_COLOR_CHOCOLATE2      cv::Vec3b(0xEE, 0x76, 0x21)
-#define CVUT_COLOR_CHOCOLATE3      cv::Vec3b(0xCD, 0x66, 0x1D)
-#define CVUT_COLOR_CHOCOLATE4      cv::Vec3b(0x8B, 0x45, 0x13)
-#define CVUT_COLOR_FIREBRICK1      cv::Vec3b(0xFF, 0x30, 0x30)
-#define CVUT_COLOR_FIREBRICK2      cv::Vec3b(0xEE, 0x2C, 0x2C)
-#define CVUT_COLOR_FIREBRICK3      cv::Vec3b(0xCD, 0x26, 0x26)
-#define CVUT_COLOR_FIREBRICK4      cv::Vec3b(0x8B, 0x1A, 0x1A)
-#define CVUT_COLOR_BROWN1          cv::Vec3b(0xFF, 0x40, 0x40)
-#define CVUT_COLOR_BROWN2          cv::Vec3b(0xEE, 0x3B, 0x3B)
-#define CVUT_COLOR_BROWN3          cv::Vec3b(0xCD, 0x33, 0x33)
-#define CVUT_COLOR_BROWN4          cv::Vec3b(0x8B, 0x23, 0x23)
-#define CVUT_COLOR_SALMON1         cv::Vec3b(0xFF, 0x8C, 0x69)
-#define CVUT_COLOR_SALMON2         cv::Vec3b(0xEE, 0x82, 0x62)
-#define CVUT_COLOR_SALMON3         cv::Vec3b(0xCD, 0x70, 0x54)
-#define CVUT_COLOR_SALMON4         cv::Vec3b(0x8B, 0x4C, 0x39)
-#define CVUT_COLOR_LIGHTSALMON1    cv::Vec3b(0xFF, 0xA0, 0x7A)
-#define CVUT_COLOR_LIGHTSALMON2    cv::Vec3b(0xEE, 0x95, 0x72)
-#define CVUT_COLOR_LIGHTSALMON3    cv::Vec3b(0xCD, 0x81, 0x62)
-#define CVUT_COLOR_LIGHTSALMON4    cv::Vec3b(0x8B, 0x57, 0x42)
-#define CVUT_COLOR_ORANGE1         cv::Vec3b(0xFF, 0xA5, 0x00)
-#define CVUT_COLOR_ORANGE2         cv::Vec3b(0xEE, 0x9A, 0x00)
-#define CVUT_COLOR_ORANGE3         cv::Vec3b(0xCD, 0x85, 0x00)
-#define CVUT_COLOR_ORANGE4         cv::Vec3b(0x8B, 0x5A, 0x00)
-#define CVUT_COLOR_DARKORANGE1     cv::Vec3b(0xFF, 0x7F, 0x00)
-#define CVUT_COLOR_DARKORANGE2     cv::Vec3b(0xEE, 0x76, 0x00)
-#define CVUT_COLOR_DARKORANGE3     cv::Vec3b(0xCD, 0x66, 0x00)
-#define CVUT_COLOR_DARKORANGE4     cv::Vec3b(0x8B, 0x45, 0x00)
-#define CVUT_COLOR_CORAL1          cv::Vec3b(0xFF, 0x72, 0x56)
-#define CVUT_COLOR_CORAL2          cv::Vec3b(0xEE, 0x6A, 0x50)
-#define CVUT_COLOR_CORAL3          cv::Vec3b(0xCD, 0x5B, 0x45)
-#define CVUT_COLOR_CORAL4          cv::Vec3b(0x8B, 0x3E, 0x2F)
-#define CVUT_COLOR_TOMATO1         cv::Vec3b(0xFF, 0x63, 0x47)
-#define CVUT_COLOR_TOMATO2         cv::Vec3b(0xEE, 0x5C, 0x42)
-#define CVUT_COLOR_TOMATO3         cv::Vec3b(0xCD, 0x4F, 0x39)
-#define CVUT_COLOR_TOMATO4         cv::Vec3b(0x8B, 0x36, 0x26)
-#define CVUT_COLOR_ORANGERED1      cv::Vec3b(0xFF, 0x45, 0x00)
-#define CVUT_COLOR_ORANGERED2      cv::Vec3b(0xEE, 0x40, 0x00)
-#define CVUT_COLOR_ORANGERED3      cv::Vec3b(0xCD, 0x37, 0x00)
-#define CVUT_COLOR_ORANGERED4      cv::Vec3b(0x8B, 0x25, 0x00)
-#define CVUT_COLOR_RED1            cv::Vec3b(0xFF, 0x00, 0x00)
-#define CVUT_COLOR_RED2            cv::Vec3b(0xEE, 0x00, 0x00)
-#define CVUT_COLOR_RED3            cv::Vec3b(0xCD, 0x00, 0x00)
-#define CVUT_COLOR_RED4            cv::Vec3b(0x8B, 0x00, 0x00)
-#define CVUT_COLOR_DEEPPINK1       cv::Vec3b(0xFF, 0x14, 0x93)
-#define CVUT_COLOR_DEEPPINK2       cv::Vec3b(0xEE, 0x12, 0x89)
-#define CVUT_COLOR_DEEPPINK3       cv::Vec3b(0xCD, 0x10, 0x76)
-#define CVUT_COLOR_DEEPPINK4       cv::Vec3b(0x8B, 0x0A, 0x50)
-#define CVUT_COLOR_HOTPINK1        cv::Vec3b(0xFF, 0x6E, 0xB4)
-#define CVUT_COLOR_HOTPINK2        cv::Vec3b(0xEE, 0x6A, 0xA7)
-#define CVUT_COLOR_HOTPINK3        cv::Vec3b(0xCD, 0x60, 0x90)
-#define CVUT_COLOR_HOTPINK4        cv::Vec3b(0x8B, 0x3A, 0x62)
-#define CVUT_COLOR_PINK1           cv::Vec3b(0xFF, 0xB5, 0xC5)
-#define CVUT_COLOR_PINK2           cv::Vec3b(0xEE, 0xA9, 0xB8)
-#define CVUT_COLOR_PINK3           cv::Vec3b(0xCD, 0x91, 0x9E)
-#define CVUT_COLOR_PINK4           cv::Vec3b(0x8B, 0x63, 0x6C)
-#define CVUT_COLOR_LIGHTPINK1      cv::Vec3b(0xFF, 0xAE, 0xB9)
-#define CVUT_COLOR_LIGHTPINK2      cv::Vec3b(0xEE, 0xA2, 0xAD)
-#define CVUT_COLOR_LIGHTPINK3      cv::Vec3b(0xCD, 0x8C, 0x95)
-#define CVUT_COLOR_LIGHTPINK4      cv::Vec3b(0x8B, 0x5F, 0x65)
-#define CVUT_COLOR_PALEVIOLETRED1  cv::Vec3b(0xFF, 0x82, 0xAB)
-#define CVUT_COLOR_PALEVIOLETRED2  cv::Vec3b(0xEE, 0x79, 0x9F)
-#define CVUT_COLOR_PALEVIOLETRED3  cv::Vec3b(0xCD, 0x68, 0x89)
-#define CVUT_COLOR_PALEVIOLETRED4  cv::Vec3b(0x8B, 0x47, 0x5D)
-#define CVUT_COLOR_MAROON1         cv::Vec3b(0xFF, 0x34, 0xB3)
-#define CVUT_COLOR_MAROON2         cv::Vec3b(0xEE, 0x30, 0xA7)
-#define CVUT_COLOR_MAROON3         cv::Vec3b(0xCD, 0x29, 0x90)
-#define CVUT_COLOR_MAROON4         cv::Vec3b(0x8B, 0x1C, 0x62)
-#define CVUT_COLOR_VIOLETRED1      cv::Vec3b(0xFF, 0x3E, 0x96)
-#define CVUT_COLOR_VIOLETRED2      cv::Vec3b(0xEE, 0x3A, 0x8C)
-#define CVUT_COLOR_VIOLETRED3      cv::Vec3b(0xCD, 0x32, 0x78)
-#define CVUT_COLOR_VIOLETRED4      cv::Vec3b(0x8B, 0x22, 0x52)
-#define CVUT_COLOR_MAGENTA1        cv::Vec3b(0xFF, 0x00, 0xFF)
-#define CVUT_COLOR_MAGENTA2        cv::Vec3b(0xEE, 0x00, 0xEE)
-#define CVUT_COLOR_MAGENTA3        cv::Vec3b(0xCD, 0x00, 0xCD)
-#define CVUT_COLOR_MAGENTA4        cv::Vec3b(0x8B, 0x00, 0x8B)
-#define CVUT_COLOR_ORCHID1         cv::Vec3b(0xFF, 0x83, 0xFA)
-#define CVUT_COLOR_ORCHID2         cv::Vec3b(0xEE, 0x7A, 0xE9)
-#define CVUT_COLOR_ORCHID3         cv::Vec3b(0xCD, 0x69, 0xC9)
-#define CVUT_COLOR_ORCHID4         cv::Vec3b(0x8B, 0x47, 0x89)
-#define CVUT_COLOR_PLUM1           cv::Vec3b(0xFF, 0xBB, 0xFF)
-#define CVUT_COLOR_PLUM2           cv::Vec3b(0xEE, 0xAE, 0xEE)
-#define CVUT_COLOR_PLUM3           cv::Vec3b(0xCD, 0x96, 0xCD)
-#define CVUT_COLOR_PLUM4           cv::Vec3b(0x8B, 0x66, 0x8B)
-#define CVUT_COLOR_MEDIUMORCHID1   cv::Vec3b(0xE0, 0x66, 0xFF)
-#define CVUT_COLOR_MEDIUMORCHID2   cv::Vec3b(0xD1, 0x5F, 0xEE)
-#define CVUT_COLOR_MEDIUMORCHID3   cv::Vec3b(0xB4, 0x52, 0xCD)
-#define CVUT_COLOR_MEDIUMORCHID4   cv::Vec3b(0x7A, 0x37, 0x8B)
-#define CVUT_COLOR_DARKORCHID1     cv::Vec3b(0xBF, 0x3E, 0xFF)
-#define CVUT_COLOR_DARKORCHID2     cv::Vec3b(0xB2, 0x3A, 0xEE)
-#define CVUT_COLOR_DARKORCHID3     cv::Vec3b(0x9A, 0x32, 0xCD)
-#define CVUT_COLOR_DARKORCHID4     cv::Vec3b(0x68, 0x22, 0x8B)
-#define CVUT_COLOR_PURPLE1         cv::Vec3b(0x9B, 0x30, 0xFF)
-#define CVUT_COLOR_PURPLE2         cv::Vec3b(0x91, 0x2C, 0xEE)
-#define CVUT_COLOR_PURPLE3         cv::Vec3b(0x7D, 0x26, 0xCD)
-#define CVUT_COLOR_PURPLE4         cv::Vec3b(0x55, 0x1A, 0x8B)
-#define CVUT_COLOR_MEDIUMPURPLE1   cv::Vec3b(0xAB, 0x82, 0xFF)
-#define CVUT_COLOR_MEDIUMPURPLE2   cv::Vec3b(0x9F, 0x79, 0xEE)
-#define CVUT_COLOR_MEDIUMPURPLE3   cv::Vec3b(0x89, 0x68, 0xCD)
-#define CVUT_COLOR_MEDIUMPURPLE4   cv::Vec3b(0x5D, 0x47, 0x8B)
-#define CVUT_COLOR_THISTLE1        cv::Vec3b(0xFF, 0xE1, 0xFF)
-#define CVUT_COLOR_THISTLE2        cv::Vec3b(0xEE, 0xD2, 0xEE)
-#define CVUT_COLOR_THISTLE3        cv::Vec3b(0xCD, 0xB5, 0xCD)
-#define CVUT_COLOR_THISTLE4        cv::Vec3b(0x8B, 0x7B, 0x8B)
-#define CVUT_COLOR_GRAY0           cv::Vec3b(0x00, 0x00, 0x00)
-#define CVUT_COLOR_GREY0           cv::Vec3b(0x00, 0x00, 0x00)
-#define CVUT_COLOR_GRAY1           cv::Vec3b(0x03, 0x03, 0x03)
-#define CVUT_COLOR_GREY1           cv::Vec3b(0x03, 0x03, 0x03)
-#define CVUT_COLOR_GRAY2           cv::Vec3b(0x05, 0x05, 0x05)
-#define CVUT_COLOR_GREY2           cv::Vec3b(0x05, 0x05, 0x05)
-#define CVUT_COLOR_GRAY3           cv::Vec3b(0x08, 0x08, 0x08)
-#define CVUT_COLOR_GREY3           cv::Vec3b(0x08, 0x08, 0x08)
-#define CVUT_COLOR_GRAY4           cv::Vec3b(0x0A, 0x0A, 0x0A)
-#define CVUT_COLOR_GREY4           cv::Vec3b(0x0A, 0x0A, 0x0A)
-#define CVUT_COLOR_GRAY5           cv::Vec3b(0x0D, 0x0D, 0x0D)
-#define CVUT_COLOR_GREY5           cv::Vec3b(0x0D, 0x0D, 0x0D)
-#define CVUT_COLOR_GRAY6           cv::Vec3b(0x0F, 0x0F, 0x0F)
-#define CVUT_COLOR_GREY6           cv::Vec3b(0x0F, 0x0F, 0x0F)
-#define CVUT_COLOR_GRAY7           cv::Vec3b(0x12, 0x12, 0x12)
-#define CVUT_COLOR_GREY7           cv::Vec3b(0x12, 0x12, 0x12)
-#define CVUT_COLOR_GRAY8           cv::Vec3b(0x14, 0x14, 0x14)
-#define CVUT_COLOR_GREY8           cv::Vec3b(0x14, 0x14, 0x14)
-#define CVUT_COLOR_GRAY9           cv::Vec3b(0x17, 0x17, 0x17)
-#define CVUT_COLOR_GREY9           cv::Vec3b(0x17, 0x17, 0x17)
-#define CVUT_COLOR_GRAY10          cv::Vec3b(0x1A, 0x1A, 0x1A)
-#define CVUT_COLOR_GREY10          cv::Vec3b(0x1A, 0x1A, 0x1A)
-#define CVUT_COLOR_GRAY11          cv::Vec3b(0x1C, 0x1C, 0x1C)
-#define CVUT_COLOR_GREY11          cv::Vec3b(0x1C, 0x1C, 0x1C)
-#define CVUT_COLOR_GRAY12          cv::Vec3b(0x1F, 0x1F, 0x1F)
-#define CVUT_COLOR_GREY12          cv::Vec3b(0x1F, 0x1F, 0x1F)
-#define CVUT_COLOR_GRAY13          cv::Vec3b(0x21, 0x21, 0x21)
-#define CVUT_COLOR_GREY13          cv::Vec3b(0x21, 0x21, 0x21)
-#define CVUT_COLOR_GRAY14          cv::Vec3b(0x24, 0x24, 0x24)
-#define CVUT_COLOR_GREY14          cv::Vec3b(0x24, 0x24, 0x24)
-#define CVUT_COLOR_GRAY15          cv::Vec3b(0x26, 0x26, 0x26)
-#define CVUT_COLOR_GREY15          cv::Vec3b(0x26, 0x26, 0x26)
-#define CVUT_COLOR_GRAY16          cv::Vec3b(0x29, 0x29, 0x29)
-#define CVUT_COLOR_GREY16          cv::Vec3b(0x29, 0x29, 0x29)
-#define CVUT_COLOR_GRAY17          cv::Vec3b(0x2B, 0x2B, 0x2B)
-#define CVUT_COLOR_GREY17          cv::Vec3b(0x2B, 0x2B, 0x2B)
-#define CVUT_COLOR_GRAY18          cv::Vec3b(0x2E, 0x2E, 0x2E)
-#define CVUT_COLOR_GREY18          cv::Vec3b(0x2E, 0x2E, 0x2E)
-#define CVUT_COLOR_GRAY19          cv::Vec3b(0x30, 0x30, 0x30)
-#define CVUT_COLOR_GREY19          cv::Vec3b(0x30, 0x30, 0x30)
-#define CVUT_COLOR_GRAY20          cv::Vec3b(0x33, 0x33, 0x33)
-#define CVUT_COLOR_GREY20          cv::Vec3b(0x33, 0x33, 0x33)
-#define CVUT_COLOR_GRAY21          cv::Vec3b(0x36, 0x36, 0x36)
-#define CVUT_COLOR_GREY21          cv::Vec3b(0x36, 0x36, 0x36)
-#define CVUT_COLOR_GRAY22          cv::Vec3b(0x38, 0x38, 0x38)
-#define CVUT_COLOR_GREY22          cv::Vec3b(0x38, 0x38, 0x38)
-#define CVUT_COLOR_GRAY23          cv::Vec3b(0x3B, 0x3B, 0x3B)
-#define CVUT_COLOR_GREY23          cv::Vec3b(0x3B, 0x3B, 0x3B)
-#define CVUT_COLOR_GRAY24          cv::Vec3b(0x3D, 0x3D, 0x3D)
-#define CVUT_COLOR_GREY24          cv::Vec3b(0x3D, 0x3D, 0x3D)
-#define CVUT_COLOR_GRAY25          cv::Vec3b(0x40, 0x40, 0x40)
-#define CVUT_COLOR_GREY25          cv::Vec3b(0x40, 0x40, 0x40)
-#define CVUT_COLOR_GRAY26          cv::Vec3b(0x42, 0x42, 0x42)
-#define CVUT_COLOR_GREY26          cv::Vec3b(0x42, 0x42, 0x42)
-#define CVUT_COLOR_GRAY27          cv::Vec3b(0x45, 0x45, 0x45)
-#define CVUT_COLOR_GREY27          cv::Vec3b(0x45, 0x45, 0x45)
-#define CVUT_COLOR_GRAY28          cv::Vec3b(0x47, 0x47, 0x47)
-#define CVUT_COLOR_GREY28          cv::Vec3b(0x47, 0x47, 0x47)
-#define CVUT_COLOR_GRAY29          cv::Vec3b(0x4A, 0x4A, 0x4A)
-#define CVUT_COLOR_GREY29          cv::Vec3b(0x4A, 0x4A, 0x4A)
-#define CVUT_COLOR_GRAY30          cv::Vec3b(0x4D, 0x4D, 0x4D)
-#define CVUT_COLOR_GREY30          cv::Vec3b(0x4D, 0x4D, 0x4D)
-#define CVUT_COLOR_GRAY31          cv::Vec3b(0x4F, 0x4F, 0x4F)
-#define CVUT_COLOR_GREY31          cv::Vec3b(0x4F, 0x4F, 0x4F)
-#define CVUT_COLOR_GRAY32          cv::Vec3b(0x52, 0x52, 0x52)
-#define CVUT_COLOR_GREY32          cv::Vec3b(0x52, 0x52, 0x52)
-#define CVUT_COLOR_GRAY33          cv::Vec3b(0x54, 0x54, 0x54)
-#define CVUT_COLOR_GREY33          cv::Vec3b(0x54, 0x54, 0x54)
-#define CVUT_COLOR_GRAY34          cv::Vec3b(0x57, 0x57, 0x57)
-#define CVUT_COLOR_GREY34          cv::Vec3b(0x57, 0x57, 0x57)
-#define CVUT_COLOR_GRAY35          cv::Vec3b(0x59, 0x59, 0x59)
-#define CVUT_COLOR_GREY35          cv::Vec3b(0x59, 0x59, 0x59)
-#define CVUT_COLOR_GRAY36          cv::Vec3b(0x5C, 0x5C, 0x5C)
-#define CVUT_COLOR_GREY36          cv::Vec3b(0x5C, 0x5C, 0x5C)
-#define CVUT_COLOR_GRAY37          cv::Vec3b(0x5E, 0x5E, 0x5E)
-#define CVUT_COLOR_GREY37          cv::Vec3b(0x5E, 0x5E, 0x5E)
-#define CVUT_COLOR_GRAY38          cv::Vec3b(0x61, 0x61, 0x61)
-#define CVUT_COLOR_GREY38          cv::Vec3b(0x61, 0x61, 0x61)
-#define CVUT_COLOR_GRAY39          cv::Vec3b(0x63, 0x63, 0x63)
-#define CVUT_COLOR_GREY39          cv::Vec3b(0x63, 0x63, 0x63)
-#define CVUT_COLOR_GRAY40          cv::Vec3b(0x66, 0x66, 0x66)
-#define CVUT_COLOR_GREY40          cv::Vec3b(0x66, 0x66, 0x66)
-#define CVUT_COLOR_GRAY41          cv::Vec3b(0x69, 0x69, 0x69)
-#define CVUT_COLOR_GREY41          cv::Vec3b(0x69, 0x69, 0x69)
-#define CVUT_COLOR_GRAY42          cv::Vec3b(0x6B, 0x6B, 0x6B)
-#define CVUT_COLOR_GREY42          cv::Vec3b(0x6B, 0x6B, 0x6B)
-#define CVUT_COLOR_GRAY43          cv::Vec3b(0x6E, 0x6E, 0x6E)
-#define CVUT_COLOR_GREY43          cv::Vec3b(0x6E, 0x6E, 0x6E)
-#define CVUT_COLOR_GRAY44          cv::Vec3b(0x70, 0x70, 0x70)
-#define CVUT_COLOR_GREY44          cv::Vec3b(0x70, 0x70, 0x70)
-#define CVUT_COLOR_GRAY45          cv::Vec3b(0x73, 0x73, 0x73)
-#define CVUT_COLOR_GREY45          cv::Vec3b(0x73, 0x73, 0x73)
-#define CVUT_COLOR_GRAY46          cv::Vec3b(0x75, 0x75, 0x75)
-#define CVUT_COLOR_GREY46          cv::Vec3b(0x75, 0x75, 0x75)
-#define CVUT_COLOR_GRAY47          cv::Vec3b(0x78, 0x78, 0x78)
-#define CVUT_COLOR_GREY47          cv::Vec3b(0x78, 0x78, 0x78)
-#define CVUT_COLOR_GRAY48          cv::Vec3b(0x7A, 0x7A, 0x7A)
-#define CVUT_COLOR_GREY48          cv::Vec3b(0x7A, 0x7A, 0x7A)
-#define CVUT_COLOR_GRAY49          cv::Vec3b(0x7D, 0x7D, 0x7D)
-#define CVUT_COLOR_GREY49          cv::Vec3b(0x7D, 0x7D, 0x7D)
-#define CVUT_COLOR_GRAY50          cv::Vec3b(0x7F, 0x7F, 0x7F)
-#define CVUT_COLOR_GREY50          cv::Vec3b(0x7F, 0x7F, 0x7F)
-#define CVUT_COLOR_GRAY51          cv::Vec3b(0x82, 0x82, 0x82)
-#define CVUT_COLOR_GREY51          cv::Vec3b(0x82, 0x82, 0x82)
-#define CVUT_COLOR_GRAY52          cv::Vec3b(0x85, 0x85, 0x85)
-#define CVUT_COLOR_GREY52          cv::Vec3b(0x85, 0x85, 0x85)
-#define CVUT_COLOR_GRAY53          cv::Vec3b(0x87, 0x87, 0x87)
-#define CVUT_COLOR_GREY53          cv::Vec3b(0x87, 0x87, 0x87)
-#define CVUT_COLOR_GRAY54          cv::Vec3b(0x8A, 0x8A, 0x8A)
-#define CVUT_COLOR_GREY54          cv::Vec3b(0x8A, 0x8A, 0x8A)
-#define CVUT_COLOR_GRAY55          cv::Vec3b(0x8C, 0x8C, 0x8C)
-#define CVUT_COLOR_GREY55          cv::Vec3b(0x8C, 0x8C, 0x8C)
-#define CVUT_COLOR_GRAY56          cv::Vec3b(0x8F, 0x8F, 0x8F)
-#define CVUT_COLOR_GREY56          cv::Vec3b(0x8F, 0x8F, 0x8F)
-#define CVUT_COLOR_GRAY57          cv::Vec3b(0x91, 0x91, 0x91)
-#define CVUT_COLOR_GREY57          cv::Vec3b(0x91, 0x91, 0x91)
-#define CVUT_COLOR_GRAY58          cv::Vec3b(0x94, 0x94, 0x94)
-#define CVUT_COLOR_GREY58          cv::Vec3b(0x94, 0x94, 0x94)
-#define CVUT_COLOR_GRAY59          cv::Vec3b(0x96, 0x96, 0x96)
-#define CVUT_COLOR_GREY59          cv::Vec3b(0x96, 0x96, 0x96)
-#define CVUT_COLOR_GRAY60          cv::Vec3b(0x99, 0x99, 0x99)
-#define CVUT_COLOR_GREY60          cv::Vec3b(0x99, 0x99, 0x99)
-#define CVUT_COLOR_GRAY61          cv::Vec3b(0x9C, 0x9C, 0x9C)
-#define CVUT_COLOR_GREY61          cv::Vec3b(0x9C, 0x9C, 0x9C)
-#define CVUT_COLOR_GRAY62          cv::Vec3b(0x9E, 0x9E, 0x9E)
-#define CVUT_COLOR_GREY62          cv::Vec3b(0x9E, 0x9E, 0x9E)
-#define CVUT_COLOR_GRAY63          cv::Vec3b(0xA1, 0xA1, 0xA1)
-#define CVUT_COLOR_GREY63          cv::Vec3b(0xA1, 0xA1, 0xA1)
-#define CVUT_COLOR_GRAY64          cv::Vec3b(0xA3, 0xA3, 0xA3)
-#define CVUT_COLOR_GREY64          cv::Vec3b(0xA3, 0xA3, 0xA3)
-#define CVUT_COLOR_GRAY65          cv::Vec3b(0xA6, 0xA6, 0xA6)
-#define CVUT_COLOR_GREY65          cv::Vec3b(0xA6, 0xA6, 0xA6)
-#define CVUT_COLOR_GRAY66          cv::Vec3b(0xA8, 0xA8, 0xA8)
-#define CVUT_COLOR_GREY66          cv::Vec3b(0xA8, 0xA8, 0xA8)
-#define CVUT_COLOR_GRAY67          cv::Vec3b(0xAB, 0xAB, 0xAB)
-#define CVUT_COLOR_GREY67          cv::Vec3b(0xAB, 0xAB, 0xAB)
-#define CVUT_COLOR_GRAY68          cv::Vec3b(0xAD, 0xAD, 0xAD)
-#define CVUT_COLOR_GREY68          cv::Vec3b(0xAD, 0xAD, 0xAD)
-#define CVUT_COLOR_GRAY69          cv::Vec3b(0xB0, 0xB0, 0xB0)
-#define CVUT_COLOR_GREY69          cv::Vec3b(0xB0, 0xB0, 0xB0)
-#define CVUT_COLOR_GRAY70          cv::Vec3b(0xB3, 0xB3, 0xB3)
-#define CVUT_COLOR_GREY70          cv::Vec3b(0xB3, 0xB3, 0xB3)
-#define CVUT_COLOR_GRAY71          cv::Vec3b(0xB5, 0xB5, 0xB5)
-#define CVUT_COLOR_GREY71          cv::Vec3b(0xB5, 0xB5, 0xB5)
-#define CVUT_COLOR_GRAY72          cv::Vec3b(0xB8, 0xB8, 0xB8)
-#define CVUT_COLOR_GREY72          cv::Vec3b(0xB8, 0xB8, 0xB8)
-#define CVUT_COLOR_GRAY73          cv::Vec3b(0xBA, 0xBA, 0xBA)
-#define CVUT_COLOR_GREY73          cv::Vec3b(0xBA, 0xBA, 0xBA)
-#define CVUT_COLOR_GRAY74          cv::Vec3b(0xBD, 0xBD, 0xBD)
-#define CVUT_COLOR_GREY74          cv::Vec3b(0xBD, 0xBD, 0xBD)
-#define CVUT_COLOR_GRAY75          cv::Vec3b(0xBF, 0xBF, 0xBF)
-#define CVUT_COLOR_GREY75          cv::Vec3b(0xBF, 0xBF, 0xBF)
-#define CVUT_COLOR_GRAY76          cv::Vec3b(0xC2, 0xC2, 0xC2)
-#define CVUT_COLOR_GREY76          cv::Vec3b(0xC2, 0xC2, 0xC2)
-#define CVUT_COLOR_GRAY77          cv::Vec3b(0xC4, 0xC4, 0xC4)
-#define CVUT_COLOR_GREY77          cv::Vec3b(0xC4, 0xC4, 0xC4)
-#define CVUT_COLOR_GRAY78          cv::Vec3b(0xC7, 0xC7, 0xC7)
-#define CVUT_COLOR_GREY78          cv::Vec3b(0xC7, 0xC7, 0xC7)
-#define CVUT_COLOR_GRAY79          cv::Vec3b(0xC9, 0xC9, 0xC9)
-#define CVUT_COLOR_GREY79          cv::Vec3b(0xC9, 0xC9, 0xC9)
-#define CVUT_COLOR_GRAY80          cv::Vec3b(0xCC, 0xCC, 0xCC)
-#define CVUT_COLOR_GREY80          cv::Vec3b(0xCC, 0xCC, 0xCC)
-#define CVUT_COLOR_GRAY81          cv::Vec3b(0xCF, 0xCF, 0xCF)
-#define CVUT_COLOR_GREY81          cv::Vec3b(0xCF, 0xCF, 0xCF)
-#define CVUT_COLOR_GRAY82          cv::Vec3b(0xD1, 0xD1, 0xD1)
-#define CVUT_COLOR_GREY82          cv::Vec3b(0xD1, 0xD1, 0xD1)
-#define CVUT_COLOR_GRAY83          cv::Vec3b(0xD4, 0xD4, 0xD4)
-#define CVUT_COLOR_GREY83          cv::Vec3b(0xD4, 0xD4, 0xD4)
-#define CVUT_COLOR_GRAY84          cv::Vec3b(0xD6, 0xD6, 0xD6)
-#define CVUT_COLOR_GREY84          cv::Vec3b(0xD6, 0xD6, 0xD6)
-#define CVUT_COLOR_GRAY85          cv::Vec3b(0xD9, 0xD9, 0xD9)
-#define CVUT_COLOR_GREY85          cv::Vec3b(0xD9, 0xD9, 0xD9)
-#define CVUT_COLOR_GRAY86          cv::Vec3b(0xDB, 0xDB, 0xDB)
-#define CVUT_COLOR_GREY86          cv::Vec3b(0xDB, 0xDB, 0xDB)
-#define CVUT_COLOR_GRAY87          cv::Vec3b(0xDE, 0xDE, 0xDE)
-#define CVUT_COLOR_GREY87          cv::Vec3b(0xDE, 0xDE, 0xDE)
-#define CVUT_COLOR_GRAY88          cv::Vec3b(0xE0, 0xE0, 0xE0)
-#define CVUT_COLOR_GREY88          cv::Vec3b(0xE0, 0xE0, 0xE0)
-#define CVUT_COLOR_GRAY89          cv::Vec3b(0xE3, 0xE3, 0xE3)
-#define CVUT_COLOR_GREY89          cv::Vec3b(0xE3, 0xE3, 0xE3)
-#define CVUT_COLOR_GRAY90          cv::Vec3b(0xE5, 0xE5, 0xE5)
-#define CVUT_COLOR_GREY90          cv::Vec3b(0xE5, 0xE5, 0xE5)
-#define CVUT_COLOR_GRAY91          cv::Vec3b(0xE8, 0xE8, 0xE8)
-#define CVUT_COLOR_GREY91          cv::Vec3b(0xE8, 0xE8, 0xE8)
-#define CVUT_COLOR_GRAY92          cv::Vec3b(0xEB, 0xEB, 0xEB)
-#define CVUT_COLOR_GREY92          cv::Vec3b(0xEB, 0xEB, 0xEB)
-#define CVUT_COLOR_GRAY93          cv::Vec3b(0xED, 0xED, 0xED)
-#define CVUT_COLOR_GREY93          cv::Vec3b(0xED, 0xED, 0xED)
-#define CVUT_COLOR_GRAY94          cv::Vec3b(0xF0, 0xF0, 0xF0)
-#define CVUT_COLOR_GREY94          cv::Vec3b(0xF0, 0xF0, 0xF0)
-#define CVUT_COLOR_GRAY95          cv::Vec3b(0xF2, 0xF2, 0xF2)
-#define CVUT_COLOR_GREY95          cv::Vec3b(0xF2, 0xF2, 0xF2)
-#define CVUT_COLOR_GRAY96          cv::Vec3b(0xF5, 0xF5, 0xF5)
-#define CVUT_COLOR_GREY96          cv::Vec3b(0xF5, 0xF5, 0xF5)
-#define CVUT_COLOR_GRAY97          cv::Vec3b(0xF7, 0xF7, 0xF7)
-#define CVUT_COLOR_GREY97          cv::Vec3b(0xF7, 0xF7, 0xF7)
-#define CVUT_COLOR_GRAY98          cv::Vec3b(0xFA, 0xFA, 0xFA)
-#define CVUT_COLOR_GREY98          cv::Vec3b(0xFA, 0xFA, 0xFA)
-#define CVUT_COLOR_GRAY99          cv::Vec3b(0xFC, 0xFC, 0xFC)
-#define CVUT_COLOR_GREY99          cv::Vec3b(0xFC, 0xFC, 0xFC)
-#define CVUT_COLOR_GRAY100         cv::Vec3b(0xFF, 0xFF, 0xFF)
-#define CVUT_COLOR_GREY100         cv::Vec3b(0xFF, 0xFF, 0xFF)
-#define CVUT_COLOR_DARKGREY        cv::Vec3b(0xA9, 0xA9, 0xA9)
-#define CVUT_COLOR_DARKGRAY        cv::Vec3b(0xA9, 0xA9, 0xA9)
-#define CVUT_COLOR_DARKBLUE        cv::Vec3b(0x00, 0x00, 0x8B)
-#define CVUT_COLOR_DARKCYAN        cv::Vec3b(0x00, 0x8B, 0x8B)
-#define CVUT_COLOR_DARKMAGENTA     cv::Vec3b(0x8B, 0x00, 0x8B)
-#define CVUT_COLOR_DARKRED         cv::Vec3b(0x8B, 0x00, 0x00)
-#define CVUT_COLOR_LIGHTGREEN      cv::Vec3b(0x90, 0xEE, 0x90)
+namespace cvut{
+	class Color{
+	public:
+		uint8_t b, g, r;
+		cv::Vec3b vec3b;
+		cv::Vec3s vec3s;
+		cv::Vec3i vec3i;
+		cv::Vec3f vec3f;
+		cv::Vec3d vec3d;
+		cv::Vec4b vec4b;
+		cv::Vec4s vec4s;
+		cv::Vec4i vec4i;
+		cv::Vec4f vec4f;
+		cv::Vec4d vec4d;
 
+		Color(uint8_t b, uint8_t g, uint8_t r)
+			: b(b), g(g), r(r)
+			, vec3b(b, g, r)
+			, vec3s(b * 255, g * 255, r * 255)
+			, vec3i(b * 255, g * 255, r * 255)
+			, vec3f(b / 255.0f, g / 255.0f, r / 255.0f)
+			, vec3d(b / 255.0,  g / 255.0,  r / 255.0 )
+			, vec4b(vec3b[0], vec3b[1], vec3b[2], 0)
+			, vec4i(vec3i[0], vec3i[1], vec3i[2], 0)
+			, vec4f(vec3f[0], vec3f[1], vec3f[2], 0)
+			, vec4d(vec3d[0], vec3d[1], vec3d[2], 0)
+		{
+		}
+
+		operator const cv::Vec3b&() const{return vec3b;}
+		operator const cv::Vec3s&() const{return vec3s;}
+		operator const cv::Vec3i&() const{return vec3i;}
+		operator const cv::Vec3f&() const{return vec3f;}
+		operator const cv::Vec3d&() const{return vec3d;}
+		operator const cv::Vec4b&() const{return vec4b;}
+		operator const cv::Vec4s&() const{return vec4s;}
+		operator const cv::Vec4i&() const{return vec4i;}
+		operator const cv::Vec4f&() const{return vec4f;}
+		operator const cv::Vec4d&() const{return vec4d;}
+
+
+		template <typename _T>
+		operator const cv::Point3_<_T>&() const{
+			return reinterpret_cast<const cv::Point3_<_T>&>(static_cast<cv::Vec<_T,3>>(*this));
+		}
+	};
+	namespace color{
+    static const Color SNOW                    (0xFA, 0xFA, 0xFF);
+    static const Color GHOSTWHITE              (0xFF, 0xF8, 0xF8);
+    static const Color WHITESMOKE              (0xF5, 0xF5, 0xF5);
+    static const Color GAINSBORO               (0xDC, 0xDC, 0xDC);
+    static const Color FLORALWHITE             (0xF0, 0xFA, 0xFF);
+    static const Color OLDLACE                 (0xE6, 0xF5, 0xFD);
+    static const Color LINEN                   (0xE6, 0xF0, 0xFA);
+    static const Color ANTIQUEWHITE            (0xD7, 0xEB, 0xFA);
+    static const Color PAPAYAWHIP              (0xD5, 0xEF, 0xFF);
+    static const Color BLANCHEDALMOND          (0xCD, 0xEB, 0xFF);
+    static const Color BISQUE                  (0xC4, 0xE4, 0xFF);
+    static const Color PEACHPUFF               (0xB9, 0xDA, 0xFF);
+    static const Color NAVAJOWHITE             (0xAD, 0xDE, 0xFF);
+    static const Color MOCCASIN                (0xB5, 0xE4, 0xFF);
+    static const Color CORNSILK                (0xDC, 0xF8, 0xFF);
+    static const Color IVORY                   (0xF0, 0xFF, 0xFF);
+    static const Color LEMONCHIFFON            (0xCD, 0xFA, 0xFF);
+    static const Color SEASHELL                (0xEE, 0xF5, 0xFF);
+    static const Color HONEYDEW                (0xF0, 0xFF, 0xF0);
+    static const Color MINTCREAM               (0xFA, 0xFF, 0xF5);
+    static const Color AZURE                   (0xFF, 0xFF, 0xF0);
+    static const Color ALICEBLUE               (0xFF, 0xF8, 0xF0);
+    static const Color LAVENDER                (0xFA, 0xE6, 0xE6);
+    static const Color LAVENDERBLUSH           (0xF5, 0xF0, 0xFF);
+    static const Color MISTYROSE               (0xE1, 0xE4, 0xFF);
+    static const Color WHITE                   (0xFF, 0xFF, 0xFF);
+    static const Color BLACK                   (0x00, 0x00, 0x00);
+    static const Color DARKSLATEGRAY           (0x4F, 0x4F, 0x2F);
+    static const Color DARKSLATEGREY           (0x4F, 0x4F, 0x2F);
+    static const Color DIMGRAY                 (0x69, 0x69, 0x69);
+    static const Color DIMGREY                 (0x69, 0x69, 0x69);
+    static const Color SLATEGRAY               (0x90, 0x80, 0x70);
+    static const Color SLATEGREY               (0x90, 0x80, 0x70);
+    static const Color LIGHTSLATEGRAY          (0x99, 0x88, 0x77);
+    static const Color LIGHTSLATEGREY          (0x99, 0x88, 0x77);
+    static const Color GRAY                    (0xBE, 0xBE, 0xBE);
+    static const Color GREY                    (0xBE, 0xBE, 0xBE);
+    static const Color LIGHTGREY               (0xD3, 0xD3, 0xD3);
+    static const Color LIGHTGRAY               (0xD3, 0xD3, 0xD3);
+    static const Color MIDNIGHTBLUE            (0x70, 0x19, 0x19);
+    static const Color NAVY                    (0x80, 0x00, 0x00);
+    static const Color NAVYBLUE                (0x80, 0x00, 0x00);
+    static const Color CORNFLOWERBLUE          (0xED, 0x95, 0x64);
+    static const Color DARKSLATEBLUE           (0x8B, 0x3D, 0x48);
+    static const Color SLATEBLUE               (0xCD, 0x5A, 0x6A);
+    static const Color MEDIUMSLATEBLUE         (0xEE, 0x68, 0x7B);
+    static const Color LIGHTSLATEBLUE          (0xFF, 0x70, 0x84);
+    static const Color MEDIUMBLUE              (0xCD, 0x00, 0x00);
+    static const Color ROYALBLUE               (0xE1, 0x69, 0x41);
+    static const Color BLUE                    (0xFF, 0x00, 0x00);
+    static const Color DODGERBLUE              (0xFF, 0x90, 0x1E);
+    static const Color DEEPSKYBLUE             (0xFF, 0xBF, 0x00);
+    static const Color SKYBLUE                 (0xEB, 0xCE, 0x87);
+    static const Color LIGHTSKYBLUE            (0xFA, 0xCE, 0x87);
+    static const Color STEELBLUE               (0xB4, 0x82, 0x46);
+    static const Color LIGHTSTEELBLUE          (0xDE, 0xC4, 0xB0);
+    static const Color LIGHTBLUE               (0xE6, 0xD8, 0xAD);
+    static const Color POWDERBLUE              (0xE6, 0xE0, 0xB0);
+    static const Color PALETURQUOISE           (0xEE, 0xEE, 0xAF);
+    static const Color DARKTURQUOISE           (0xD1, 0xCE, 0x00);
+    static const Color MEDIUMTURQUOISE         (0xCC, 0xD1, 0x48);
+    static const Color TURQUOISE               (0xD0, 0xE0, 0x40);
+    static const Color CYAN                    (0xFF, 0xFF, 0x00);
+    static const Color LIGHTCYAN               (0xFF, 0xFF, 0xE0);
+    static const Color CADETBLUE               (0xA0, 0x9E, 0x5F);
+    static const Color MEDIUMAQUAMARINE        (0xAA, 0xCD, 0x66);
+    static const Color AQUAMARINE              (0xD4, 0xFF, 0x7F);
+    static const Color DARKGREEN               (0x00, 0x64, 0x00);
+    static const Color DARKOLIVEGREEN          (0x2F, 0x6B, 0x55);
+    static const Color DARKSEAGREEN            (0x8F, 0xBC, 0x8F);
+    static const Color SEAGREEN                (0x57, 0x8B, 0x2E);
+    static const Color MEDIUMSEAGREEN          (0x71, 0xB3, 0x3C);
+    static const Color LIGHTSEAGREEN           (0xAA, 0xB2, 0x20);
+    static const Color PALEGREEN               (0x98, 0xFB, 0x98);
+    static const Color SPRINGGREEN             (0x7F, 0xFF, 0x00);
+    static const Color LAWNGREEN               (0x00, 0xFC, 0x7C);
+    static const Color GREEN                   (0x00, 0xFF, 0x00);
+    static const Color CHARTREUSE              (0x00, 0xFF, 0x7F);
+    static const Color MEDIUMSPRINGGREEN       (0x9A, 0xFA, 0x00);
+    static const Color GREENYELLOW             (0x2F, 0xFF, 0xAD);
+    static const Color LIMEGREEN               (0x32, 0xCD, 0x32);
+    static const Color YELLOWGREEN             (0x32, 0xCD, 0x9A);
+    static const Color FORESTGREEN             (0x22, 0x8B, 0x22);
+    static const Color OLIVEDRAB               (0x23, 0x8E, 0x6B);
+    static const Color DARKKHAKI               (0x6B, 0xB7, 0xBD);
+    static const Color KHAKI                   (0x8C, 0xE6, 0xF0);
+    static const Color PALEGOLDENROD           (0xAA, 0xE8, 0xEE);
+    static const Color LIGHTGOLDENRODYELLOW    (0xD2, 0xFA, 0xFA);
+    static const Color LIGHTYELLOW             (0xE0, 0xFF, 0xFF);
+    static const Color YELLOW                  (0x00, 0xFF, 0xFF);
+    static const Color GOLD                    (0x00, 0xD7, 0xFF);
+    static const Color LIGHTGOLDENROD          (0x82, 0xDD, 0xEE);
+    static const Color GOLDENROD               (0x20, 0xA5, 0xDA);
+    static const Color DARKGOLDENROD           (0x0B, 0x86, 0xB8);
+    static const Color ROSYBROWN               (0x8F, 0x8F, 0xBC);
+    static const Color INDIANRED               (0x5C, 0x5C, 0xCD);
+    static const Color SADDLEBROWN             (0x13, 0x45, 0x8B);
+    static const Color SIENNA                  (0x2D, 0x52, 0xA0);
+    static const Color PERU                    (0x3F, 0x85, 0xCD);
+    static const Color BURLYWOOD               (0x87, 0xB8, 0xDE);
+    static const Color BEIGE                   (0xDC, 0xF5, 0xF5);
+    static const Color WHEAT                   (0xB3, 0xDE, 0xF5);
+    static const Color SANDYBROWN              (0x60, 0xA4, 0xF4);
+    static const Color TAN                     (0x8C, 0xB4, 0xD2);
+    static const Color CHOCOLATE               (0x1E, 0x69, 0xD2);
+    static const Color FIREBRICK               (0x22, 0x22, 0xB2);
+    static const Color BROWN                   (0x2A, 0x2A, 0xA5);
+    static const Color DARKSALMON              (0x7A, 0x96, 0xE9);
+    static const Color SALMON                  (0x72, 0x80, 0xFA);
+    static const Color LIGHTSALMON             (0x7A, 0xA0, 0xFF);
+    static const Color ORANGE                  (0x00, 0xA5, 0xFF);
+    static const Color DARKORANGE              (0x00, 0x8C, 0xFF);
+    static const Color CORAL                   (0x50, 0x7F, 0xFF);
+    static const Color LIGHTCORAL              (0x80, 0x80, 0xF0);
+    static const Color TOMATO                  (0x47, 0x63, 0xFF);
+    static const Color ORANGERED               (0x00, 0x45, 0xFF);
+    static const Color RED                     (0x00, 0x00, 0xFF);
+    static const Color HOTPINK                 (0xB4, 0x69, 0xFF);
+    static const Color DEEPPINK                (0x93, 0x14, 0xFF);
+    static const Color PINK                    (0xCB, 0xC0, 0xFF);
+    static const Color LIGHTPINK               (0xC1, 0xB6, 0xFF);
+    static const Color PALEVIOLETRED           (0x93, 0x70, 0xDB);
+    static const Color MAROON                  (0x60, 0x30, 0xB0);
+    static const Color MEDIUMVIOLETRED         (0x85, 0x15, 0xC7);
+    static const Color VIOLETRED               (0x90, 0x20, 0xD0);
+    static const Color MAGENTA                 (0xFF, 0x00, 0xFF);
+    static const Color VIOLET                  (0xEE, 0x82, 0xEE);
+    static const Color PLUM                    (0xDD, 0xA0, 0xDD);
+    static const Color ORCHID                  (0xD6, 0x70, 0xDA);
+    static const Color MEDIUMORCHID            (0xD3, 0x55, 0xBA);
+    static const Color DARKORCHID              (0xCC, 0x32, 0x99);
+    static const Color DARKVIOLET              (0xD3, 0x00, 0x94);
+    static const Color BLUEVIOLET              (0xE2, 0x2B, 0x8A);
+    static const Color PURPLE                  (0xF0, 0x20, 0xA0);
+    static const Color MEDIUMPURPLE            (0xDB, 0x70, 0x93);
+    static const Color THISTLE                 (0xD8, 0xBF, 0xD8);
+    static const Color SNOW1                   (0xFA, 0xFA, 0xFF);
+    static const Color SNOW2                   (0xE9, 0xE9, 0xEE);
+    static const Color SNOW3                   (0xC9, 0xC9, 0xCD);
+    static const Color SNOW4                   (0x89, 0x89, 0x8B);
+    static const Color SEASHELL1               (0xEE, 0xF5, 0xFF);
+    static const Color SEASHELL2               (0xDE, 0xE5, 0xEE);
+    static const Color SEASHELL3               (0xBF, 0xC5, 0xCD);
+    static const Color SEASHELL4               (0x82, 0x86, 0x8B);
+    static const Color ANTIQUEWHITE1           (0xDB, 0xEF, 0xFF);
+    static const Color ANTIQUEWHITE2           (0xCC, 0xDF, 0xEE);
+    static const Color ANTIQUEWHITE3           (0xB0, 0xC0, 0xCD);
+    static const Color ANTIQUEWHITE4           (0x78, 0x83, 0x8B);
+    static const Color BISQUE1                 (0xC4, 0xE4, 0xFF);
+    static const Color BISQUE2                 (0xB7, 0xD5, 0xEE);
+    static const Color BISQUE3                 (0x9E, 0xB7, 0xCD);
+    static const Color BISQUE4                 (0x6B, 0x7D, 0x8B);
+    static const Color PEACHPUFF1              (0xB9, 0xDA, 0xFF);
+    static const Color PEACHPUFF2              (0xAD, 0xCB, 0xEE);
+    static const Color PEACHPUFF3              (0x95, 0xAF, 0xCD);
+    static const Color PEACHPUFF4              (0x65, 0x77, 0x8B);
+    static const Color NAVAJOWHITE1            (0xAD, 0xDE, 0xFF);
+    static const Color NAVAJOWHITE2            (0xA1, 0xCF, 0xEE);
+    static const Color NAVAJOWHITE3            (0x8B, 0xB3, 0xCD);
+    static const Color NAVAJOWHITE4            (0x5E, 0x79, 0x8B);
+    static const Color LEMONCHIFFON1           (0xCD, 0xFA, 0xFF);
+    static const Color LEMONCHIFFON2           (0xBF, 0xE9, 0xEE);
+    static const Color LEMONCHIFFON3           (0xA5, 0xC9, 0xCD);
+    static const Color LEMONCHIFFON4           (0x70, 0x89, 0x8B);
+    static const Color CORNSILK1               (0xDC, 0xF8, 0xFF);
+    static const Color CORNSILK2               (0xCD, 0xE8, 0xEE);
+    static const Color CORNSILK3               (0xB1, 0xC8, 0xCD);
+    static const Color CORNSILK4               (0x78, 0x88, 0x8B);
+    static const Color IVORY1                  (0xF0, 0xFF, 0xFF);
+    static const Color IVORY2                  (0xE0, 0xEE, 0xEE);
+    static const Color IVORY3                  (0xC1, 0xCD, 0xCD);
+    static const Color IVORY4                  (0x83, 0x8B, 0x8B);
+    static const Color HONEYDEW1               (0xF0, 0xFF, 0xF0);
+    static const Color HONEYDEW2               (0xE0, 0xEE, 0xE0);
+    static const Color HONEYDEW3               (0xC1, 0xCD, 0xC1);
+    static const Color HONEYDEW4               (0x83, 0x8B, 0x83);
+    static const Color LAVENDERBLUSH1          (0xF5, 0xF0, 0xFF);
+    static const Color LAVENDERBLUSH2          (0xE5, 0xE0, 0xEE);
+    static const Color LAVENDERBLUSH3          (0xC5, 0xC1, 0xCD);
+    static const Color LAVENDERBLUSH4          (0x86, 0x83, 0x8B);
+    static const Color MISTYROSE1              (0xE1, 0xE4, 0xFF);
+    static const Color MISTYROSE2              (0xD2, 0xD5, 0xEE);
+    static const Color MISTYROSE3              (0xB5, 0xB7, 0xCD);
+    static const Color MISTYROSE4              (0x7B, 0x7D, 0x8B);
+    static const Color AZURE1                  (0xFF, 0xFF, 0xF0);
+    static const Color AZURE2                  (0xEE, 0xEE, 0xE0);
+    static const Color AZURE3                  (0xCD, 0xCD, 0xC1);
+    static const Color AZURE4                  (0x8B, 0x8B, 0x83);
+    static const Color SLATEBLUE1              (0xFF, 0x6F, 0x83);
+    static const Color SLATEBLUE2              (0xEE, 0x67, 0x7A);
+    static const Color SLATEBLUE3              (0xCD, 0x59, 0x69);
+    static const Color SLATEBLUE4              (0x8B, 0x3C, 0x47);
+    static const Color ROYALBLUE1              (0xFF, 0x76, 0x48);
+    static const Color ROYALBLUE2              (0xEE, 0x6E, 0x43);
+    static const Color ROYALBLUE3              (0xCD, 0x5F, 0x3A);
+    static const Color ROYALBLUE4              (0x8B, 0x40, 0x27);
+    static const Color BLUE1                   (0xFF, 0x00, 0x00);
+    static const Color BLUE2                   (0xEE, 0x00, 0x00);
+    static const Color BLUE3                   (0xCD, 0x00, 0x00);
+    static const Color BLUE4                   (0x8B, 0x00, 0x00);
+    static const Color DODGERBLUE1             (0xFF, 0x90, 0x1E);
+    static const Color DODGERBLUE2             (0xEE, 0x86, 0x1C);
+    static const Color DODGERBLUE3             (0xCD, 0x74, 0x18);
+    static const Color DODGERBLUE4             (0x8B, 0x4E, 0x10);
+    static const Color STEELBLUE1              (0xFF, 0xB8, 0x63);
+    static const Color STEELBLUE2              (0xEE, 0xAC, 0x5C);
+    static const Color STEELBLUE3              (0xCD, 0x94, 0x4F);
+    static const Color STEELBLUE4              (0x8B, 0x64, 0x36);
+    static const Color DEEPSKYBLUE1            (0xFF, 0xBF, 0x00);
+    static const Color DEEPSKYBLUE2            (0xEE, 0xB2, 0x00);
+    static const Color DEEPSKYBLUE3            (0xCD, 0x9A, 0x00);
+    static const Color DEEPSKYBLUE4            (0x8B, 0x68, 0x00);
+    static const Color SKYBLUE1                (0xFF, 0xCE, 0x87);
+    static const Color SKYBLUE2                (0xEE, 0xC0, 0x7E);
+    static const Color SKYBLUE3                (0xCD, 0xA6, 0x6C);
+    static const Color SKYBLUE4                (0x8B, 0x70, 0x4A);
+    static const Color LIGHTSKYBLUE1           (0xFF, 0xE2, 0xB0);
+    static const Color LIGHTSKYBLUE2           (0xEE, 0xD3, 0xA4);
+    static const Color LIGHTSKYBLUE3           (0xCD, 0xB6, 0x8D);
+    static const Color LIGHTSKYBLUE4           (0x8B, 0x7B, 0x60);
+    static const Color SLATEGRAY1              (0xFF, 0xE2, 0xC6);
+    static const Color SLATEGRAY2              (0xEE, 0xD3, 0xB9);
+    static const Color SLATEGRAY3              (0xCD, 0xB6, 0x9F);
+    static const Color SLATEGRAY4              (0x8B, 0x7B, 0x6C);
+    static const Color LIGHTSTEELBLUE1         (0xFF, 0xE1, 0xCA);
+    static const Color LIGHTSTEELBLUE2         (0xEE, 0xD2, 0xBC);
+    static const Color LIGHTSTEELBLUE3         (0xCD, 0xB5, 0xA2);
+    static const Color LIGHTSTEELBLUE4         (0x8B, 0x7B, 0x6E);
+    static const Color LIGHTBLUE1              (0xFF, 0xEF, 0xBF);
+    static const Color LIGHTBLUE2              (0xEE, 0xDF, 0xB2);
+    static const Color LIGHTBLUE3              (0xCD, 0xC0, 0x9A);
+    static const Color LIGHTBLUE4              (0x8B, 0x83, 0x68);
+    static const Color LIGHTCYAN1              (0xFF, 0xFF, 0xE0);
+    static const Color LIGHTCYAN2              (0xEE, 0xEE, 0xD1);
+    static const Color LIGHTCYAN3              (0xCD, 0xCD, 0xB4);
+    static const Color LIGHTCYAN4              (0x8B, 0x8B, 0x7A);
+    static const Color PALETURQUOISE1          (0xFF, 0xFF, 0xBB);
+    static const Color PALETURQUOISE2          (0xEE, 0xEE, 0xAE);
+    static const Color PALETURQUOISE3          (0xCD, 0xCD, 0x96);
+    static const Color PALETURQUOISE4          (0x8B, 0x8B, 0x66);
+    static const Color CADETBLUE1              (0xFF, 0xF5, 0x98);
+    static const Color CADETBLUE2              (0xEE, 0xE5, 0x8E);
+    static const Color CADETBLUE3              (0xCD, 0xC5, 0x7A);
+    static const Color CADETBLUE4              (0x8B, 0x86, 0x53);
+    static const Color TURQUOISE1              (0xFF, 0xF5, 0x00);
+    static const Color TURQUOISE2              (0xEE, 0xE5, 0x00);
+    static const Color TURQUOISE3              (0xCD, 0xC5, 0x00);
+    static const Color TURQUOISE4              (0x8B, 0x86, 0x00);
+    static const Color CYAN1                   (0xFF, 0xFF, 0x00);
+    static const Color CYAN2                   (0xEE, 0xEE, 0x00);
+    static const Color CYAN3                   (0xCD, 0xCD, 0x00);
+    static const Color CYAN4                   (0x8B, 0x8B, 0x00);
+    static const Color DARKSLATEGRAY1          (0xFF, 0xFF, 0x97);
+    static const Color DARKSLATEGRAY2          (0xEE, 0xEE, 0x8D);
+    static const Color DARKSLATEGRAY3          (0xCD, 0xCD, 0x79);
+    static const Color DARKSLATEGRAY4          (0x8B, 0x8B, 0x52);
+    static const Color AQUAMARINE1             (0xD4, 0xFF, 0x7F);
+    static const Color AQUAMARINE2             (0xC6, 0xEE, 0x76);
+    static const Color AQUAMARINE3             (0xAA, 0xCD, 0x66);
+    static const Color AQUAMARINE4             (0x74, 0x8B, 0x45);
+    static const Color DARKSEAGREEN1           (0xC1, 0xFF, 0xC1);
+    static const Color DARKSEAGREEN2           (0xB4, 0xEE, 0xB4);
+    static const Color DARKSEAGREEN3           (0x9B, 0xCD, 0x9B);
+    static const Color DARKSEAGREEN4           (0x69, 0x8B, 0x69);
+    static const Color SEAGREEN1               (0x9F, 0xFF, 0x54);
+    static const Color SEAGREEN2               (0x94, 0xEE, 0x4E);
+    static const Color SEAGREEN3               (0x80, 0xCD, 0x43);
+    static const Color SEAGREEN4               (0x57, 0x8B, 0x2E);
+    static const Color PALEGREEN1              (0x9A, 0xFF, 0x9A);
+    static const Color PALEGREEN2              (0x90, 0xEE, 0x90);
+    static const Color PALEGREEN3              (0x7C, 0xCD, 0x7C);
+    static const Color PALEGREEN4              (0x54, 0x8B, 0x54);
+    static const Color SPRINGGREEN1            (0x7F, 0xFF, 0x00);
+    static const Color SPRINGGREEN2            (0x76, 0xEE, 0x00);
+    static const Color SPRINGGREEN3            (0x66, 0xCD, 0x00);
+    static const Color SPRINGGREEN4            (0x45, 0x8B, 0x00);
+    static const Color GREEN1                  (0x00, 0xFF, 0x00);
+    static const Color GREEN2                  (0x00, 0xEE, 0x00);
+    static const Color GREEN3                  (0x00, 0xCD, 0x00);
+    static const Color GREEN4                  (0x00, 0x8B, 0x00);
+    static const Color CHARTREUSE1             (0x00, 0xFF, 0x7F);
+    static const Color CHARTREUSE2             (0x00, 0xEE, 0x76);
+    static const Color CHARTREUSE3             (0x00, 0xCD, 0x66);
+    static const Color CHARTREUSE4             (0x00, 0x8B, 0x45);
+    static const Color OLIVEDRAB1              (0x3E, 0xFF, 0xC0);
+    static const Color OLIVEDRAB2              (0x3A, 0xEE, 0xB3);
+    static const Color OLIVEDRAB3              (0x32, 0xCD, 0x9A);
+    static const Color OLIVEDRAB4              (0x22, 0x8B, 0x69);
+    static const Color DARKOLIVEGREEN1         (0x70, 0xFF, 0xCA);
+    static const Color DARKOLIVEGREEN2         (0x68, 0xEE, 0xBC);
+    static const Color DARKOLIVEGREEN3         (0x5A, 0xCD, 0xA2);
+    static const Color DARKOLIVEGREEN4         (0x3D, 0x8B, 0x6E);
+    static const Color KHAKI1                  (0x8F, 0xF6, 0xFF);
+    static const Color KHAKI2                  (0x85, 0xE6, 0xEE);
+    static const Color KHAKI3                  (0x73, 0xC6, 0xCD);
+    static const Color KHAKI4                  (0x4E, 0x86, 0x8B);
+    static const Color LIGHTGOLDENROD1         (0x8B, 0xEC, 0xFF);
+    static const Color LIGHTGOLDENROD2         (0x82, 0xDC, 0xEE);
+    static const Color LIGHTGOLDENROD3         (0x70, 0xBE, 0xCD);
+    static const Color LIGHTGOLDENROD4         (0x4C, 0x81, 0x8B);
+    static const Color LIGHTYELLOW1            (0xE0, 0xFF, 0xFF);
+    static const Color LIGHTYELLOW2            (0xD1, 0xEE, 0xEE);
+    static const Color LIGHTYELLOW3            (0xB4, 0xCD, 0xCD);
+    static const Color LIGHTYELLOW4            (0x7A, 0x8B, 0x8B);
+    static const Color YELLOW1                 (0x00, 0xFF, 0xFF);
+    static const Color YELLOW2                 (0x00, 0xEE, 0xEE);
+    static const Color YELLOW3                 (0x00, 0xCD, 0xCD);
+    static const Color YELLOW4                 (0x00, 0x8B, 0x8B);
+    static const Color GOLD1                   (0x00, 0xD7, 0xFF);
+    static const Color GOLD2                   (0x00, 0xC9, 0xEE);
+    static const Color GOLD3                   (0x00, 0xAD, 0xCD);
+    static const Color GOLD4                   (0x00, 0x75, 0x8B);
+    static const Color GOLDENROD1              (0x25, 0xC1, 0xFF);
+    static const Color GOLDENROD2              (0x22, 0xB4, 0xEE);
+    static const Color GOLDENROD3              (0x1D, 0x9B, 0xCD);
+    static const Color GOLDENROD4              (0x14, 0x69, 0x8B);
+    static const Color DARKGOLDENROD1          (0x0F, 0xB9, 0xFF);
+    static const Color DARKGOLDENROD2          (0x0E, 0xAD, 0xEE);
+    static const Color DARKGOLDENROD3          (0x0C, 0x95, 0xCD);
+    static const Color DARKGOLDENROD4          (0x08, 0x65, 0x8B);
+    static const Color ROSYBROWN1              (0xC1, 0xC1, 0xFF);
+    static const Color ROSYBROWN2              (0xB4, 0xB4, 0xEE);
+    static const Color ROSYBROWN3              (0x9B, 0x9B, 0xCD);
+    static const Color ROSYBROWN4              (0x69, 0x69, 0x8B);
+    static const Color INDIANRED1              (0x6A, 0x6A, 0xFF);
+    static const Color INDIANRED2              (0x63, 0x63, 0xEE);
+    static const Color INDIANRED3              (0x55, 0x55, 0xCD);
+    static const Color INDIANRED4              (0x3A, 0x3A, 0x8B);
+    static const Color SIENNA1                 (0x47, 0x82, 0xFF);
+    static const Color SIENNA2                 (0x42, 0x79, 0xEE);
+    static const Color SIENNA3                 (0x39, 0x68, 0xCD);
+    static const Color SIENNA4                 (0x26, 0x47, 0x8B);
+    static const Color BURLYWOOD1              (0x9B, 0xD3, 0xFF);
+    static const Color BURLYWOOD2              (0x91, 0xC5, 0xEE);
+    static const Color BURLYWOOD3              (0x7D, 0xAA, 0xCD);
+    static const Color BURLYWOOD4              (0x55, 0x73, 0x8B);
+    static const Color WHEAT1                  (0xBA, 0xE7, 0xFF);
+    static const Color WHEAT2                  (0xAE, 0xD8, 0xEE);
+    static const Color WHEAT3                  (0x96, 0xBA, 0xCD);
+    static const Color WHEAT4                  (0x66, 0x7E, 0x8B);
+    static const Color TAN1                    (0x4F, 0xA5, 0xFF);
+    static const Color TAN2                    (0x49, 0x9A, 0xEE);
+    static const Color TAN3                    (0x3F, 0x85, 0xCD);
+    static const Color TAN4                    (0x2B, 0x5A, 0x8B);
+    static const Color CHOCOLATE1              (0x24, 0x7F, 0xFF);
+    static const Color CHOCOLATE2              (0x21, 0x76, 0xEE);
+    static const Color CHOCOLATE3              (0x1D, 0x66, 0xCD);
+    static const Color CHOCOLATE4              (0x13, 0x45, 0x8B);
+    static const Color FIREBRICK1              (0x30, 0x30, 0xFF);
+    static const Color FIREBRICK2              (0x2C, 0x2C, 0xEE);
+    static const Color FIREBRICK3              (0x26, 0x26, 0xCD);
+    static const Color FIREBRICK4              (0x1A, 0x1A, 0x8B);
+    static const Color BROWN1                  (0x40, 0x40, 0xFF);
+    static const Color BROWN2                  (0x3B, 0x3B, 0xEE);
+    static const Color BROWN3                  (0x33, 0x33, 0xCD);
+    static const Color BROWN4                  (0x23, 0x23, 0x8B);
+    static const Color SALMON1                 (0x69, 0x8C, 0xFF);
+    static const Color SALMON2                 (0x62, 0x82, 0xEE);
+    static const Color SALMON3                 (0x54, 0x70, 0xCD);
+    static const Color SALMON4                 (0x39, 0x4C, 0x8B);
+    static const Color LIGHTSALMON1            (0x7A, 0xA0, 0xFF);
+    static const Color LIGHTSALMON2            (0x72, 0x95, 0xEE);
+    static const Color LIGHTSALMON3            (0x62, 0x81, 0xCD);
+    static const Color LIGHTSALMON4            (0x42, 0x57, 0x8B);
+    static const Color ORANGE1                 (0x00, 0xA5, 0xFF);
+    static const Color ORANGE2                 (0x00, 0x9A, 0xEE);
+    static const Color ORANGE3                 (0x00, 0x85, 0xCD);
+    static const Color ORANGE4                 (0x00, 0x5A, 0x8B);
+    static const Color DARKORANGE1             (0x00, 0x7F, 0xFF);
+    static const Color DARKORANGE2             (0x00, 0x76, 0xEE);
+    static const Color DARKORANGE3             (0x00, 0x66, 0xCD);
+    static const Color DARKORANGE4             (0x00, 0x45, 0x8B);
+    static const Color CORAL1                  (0x56, 0x72, 0xFF);
+    static const Color CORAL2                  (0x50, 0x6A, 0xEE);
+    static const Color CORAL3                  (0x45, 0x5B, 0xCD);
+    static const Color CORAL4                  (0x2F, 0x3E, 0x8B);
+    static const Color TOMATO1                 (0x47, 0x63, 0xFF);
+    static const Color TOMATO2                 (0x42, 0x5C, 0xEE);
+    static const Color TOMATO3                 (0x39, 0x4F, 0xCD);
+    static const Color TOMATO4                 (0x26, 0x36, 0x8B);
+    static const Color ORANGERED1              (0x00, 0x45, 0xFF);
+    static const Color ORANGERED2              (0x00, 0x40, 0xEE);
+    static const Color ORANGERED3              (0x00, 0x37, 0xCD);
+    static const Color ORANGERED4              (0x00, 0x25, 0x8B);
+    static const Color RED1                    (0x00, 0x00, 0xFF);
+    static const Color RED2                    (0x00, 0x00, 0xEE);
+    static const Color RED3                    (0x00, 0x00, 0xCD);
+    static const Color RED4                    (0x00, 0x00, 0x8B);
+    static const Color DEEPPINK1               (0x93, 0x14, 0xFF);
+    static const Color DEEPPINK2               (0x89, 0x12, 0xEE);
+    static const Color DEEPPINK3               (0x76, 0x10, 0xCD);
+    static const Color DEEPPINK4               (0x50, 0x0A, 0x8B);
+    static const Color HOTPINK1                (0xB4, 0x6E, 0xFF);
+    static const Color HOTPINK2                (0xA7, 0x6A, 0xEE);
+    static const Color HOTPINK3                (0x90, 0x60, 0xCD);
+    static const Color HOTPINK4                (0x62, 0x3A, 0x8B);
+    static const Color PINK1                   (0xC5, 0xB5, 0xFF);
+    static const Color PINK2                   (0xB8, 0xA9, 0xEE);
+    static const Color PINK3                   (0x9E, 0x91, 0xCD);
+    static const Color PINK4                   (0x6C, 0x63, 0x8B);
+    static const Color LIGHTPINK1              (0xB9, 0xAE, 0xFF);
+    static const Color LIGHTPINK2              (0xAD, 0xA2, 0xEE);
+    static const Color LIGHTPINK3              (0x95, 0x8C, 0xCD);
+    static const Color LIGHTPINK4              (0x65, 0x5F, 0x8B);
+    static const Color PALEVIOLETRED1          (0xAB, 0x82, 0xFF);
+    static const Color PALEVIOLETRED2          (0x9F, 0x79, 0xEE);
+    static const Color PALEVIOLETRED3          (0x89, 0x68, 0xCD);
+    static const Color PALEVIOLETRED4          (0x5D, 0x47, 0x8B);
+    static const Color MAROON1                 (0xB3, 0x34, 0xFF);
+    static const Color MAROON2                 (0xA7, 0x30, 0xEE);
+    static const Color MAROON3                 (0x90, 0x29, 0xCD);
+    static const Color MAROON4                 (0x62, 0x1C, 0x8B);
+    static const Color VIOLETRED1              (0x96, 0x3E, 0xFF);
+    static const Color VIOLETRED2              (0x8C, 0x3A, 0xEE);
+    static const Color VIOLETRED3              (0x78, 0x32, 0xCD);
+    static const Color VIOLETRED4              (0x52, 0x22, 0x8B);
+    static const Color MAGENTA1                (0xFF, 0x00, 0xFF);
+    static const Color MAGENTA2                (0xEE, 0x00, 0xEE);
+    static const Color MAGENTA3                (0xCD, 0x00, 0xCD);
+    static const Color MAGENTA4                (0x8B, 0x00, 0x8B);
+    static const Color ORCHID1                 (0xFA, 0x83, 0xFF);
+    static const Color ORCHID2                 (0xE9, 0x7A, 0xEE);
+    static const Color ORCHID3                 (0xC9, 0x69, 0xCD);
+    static const Color ORCHID4                 (0x89, 0x47, 0x8B);
+    static const Color PLUM1                   (0xFF, 0xBB, 0xFF);
+    static const Color PLUM2                   (0xEE, 0xAE, 0xEE);
+    static const Color PLUM3                   (0xCD, 0x96, 0xCD);
+    static const Color PLUM4                   (0x8B, 0x66, 0x8B);
+    static const Color MEDIUMORCHID1           (0xFF, 0x66, 0xE0);
+    static const Color MEDIUMORCHID2           (0xEE, 0x5F, 0xD1);
+    static const Color MEDIUMORCHID3           (0xCD, 0x52, 0xB4);
+    static const Color MEDIUMORCHID4           (0x8B, 0x37, 0x7A);
+    static const Color DARKORCHID1             (0xFF, 0x3E, 0xBF);
+    static const Color DARKORCHID2             (0xEE, 0x3A, 0xB2);
+    static const Color DARKORCHID3             (0xCD, 0x32, 0x9A);
+    static const Color DARKORCHID4             (0x8B, 0x22, 0x68);
+    static const Color PURPLE1                 (0xFF, 0x30, 0x9B);
+    static const Color PURPLE2                 (0xEE, 0x2C, 0x91);
+    static const Color PURPLE3                 (0xCD, 0x26, 0x7D);
+    static const Color PURPLE4                 (0x8B, 0x1A, 0x55);
+    static const Color MEDIUMPURPLE1           (0xFF, 0x82, 0xAB);
+    static const Color MEDIUMPURPLE2           (0xEE, 0x79, 0x9F);
+    static const Color MEDIUMPURPLE3           (0xCD, 0x68, 0x89);
+    static const Color MEDIUMPURPLE4           (0x8B, 0x47, 0x5D);
+    static const Color THISTLE1                (0xFF, 0xE1, 0xFF);
+    static const Color THISTLE2                (0xEE, 0xD2, 0xEE);
+    static const Color THISTLE3                (0xCD, 0xB5, 0xCD);
+    static const Color THISTLE4                (0x8B, 0x7B, 0x8B);
+    static const Color GRAY0                   (0x00, 0x00, 0x00);
+    static const Color GREY0                   (0x00, 0x00, 0x00);
+    static const Color GRAY1                   (0x03, 0x03, 0x03);
+    static const Color GREY1                   (0x03, 0x03, 0x03);
+    static const Color GRAY2                   (0x05, 0x05, 0x05);
+    static const Color GREY2                   (0x05, 0x05, 0x05);
+    static const Color GRAY3                   (0x08, 0x08, 0x08);
+    static const Color GREY3                   (0x08, 0x08, 0x08);
+    static const Color GRAY4                   (0x0A, 0x0A, 0x0A);
+    static const Color GREY4                   (0x0A, 0x0A, 0x0A);
+    static const Color GRAY5                   (0x0D, 0x0D, 0x0D);
+    static const Color GREY5                   (0x0D, 0x0D, 0x0D);
+    static const Color GRAY6                   (0x0F, 0x0F, 0x0F);
+    static const Color GREY6                   (0x0F, 0x0F, 0x0F);
+    static const Color GRAY7                   (0x12, 0x12, 0x12);
+    static const Color GREY7                   (0x12, 0x12, 0x12);
+    static const Color GRAY8                   (0x14, 0x14, 0x14);
+    static const Color GREY8                   (0x14, 0x14, 0x14);
+    static const Color GRAY9                   (0x17, 0x17, 0x17);
+    static const Color GREY9                   (0x17, 0x17, 0x17);
+    static const Color GRAY10                  (0x1A, 0x1A, 0x1A);
+    static const Color GREY10                  (0x1A, 0x1A, 0x1A);
+    static const Color GRAY11                  (0x1C, 0x1C, 0x1C);
+    static const Color GREY11                  (0x1C, 0x1C, 0x1C);
+    static const Color GRAY12                  (0x1F, 0x1F, 0x1F);
+    static const Color GREY12                  (0x1F, 0x1F, 0x1F);
+    static const Color GRAY13                  (0x21, 0x21, 0x21);
+    static const Color GREY13                  (0x21, 0x21, 0x21);
+    static const Color GRAY14                  (0x24, 0x24, 0x24);
+    static const Color GREY14                  (0x24, 0x24, 0x24);
+    static const Color GRAY15                  (0x26, 0x26, 0x26);
+    static const Color GREY15                  (0x26, 0x26, 0x26);
+    static const Color GRAY16                  (0x29, 0x29, 0x29);
+    static const Color GREY16                  (0x29, 0x29, 0x29);
+    static const Color GRAY17                  (0x2B, 0x2B, 0x2B);
+    static const Color GREY17                  (0x2B, 0x2B, 0x2B);
+    static const Color GRAY18                  (0x2E, 0x2E, 0x2E);
+    static const Color GREY18                  (0x2E, 0x2E, 0x2E);
+    static const Color GRAY19                  (0x30, 0x30, 0x30);
+    static const Color GREY19                  (0x30, 0x30, 0x30);
+    static const Color GRAY20                  (0x33, 0x33, 0x33);
+    static const Color GREY20                  (0x33, 0x33, 0x33);
+    static const Color GRAY21                  (0x36, 0x36, 0x36);
+    static const Color GREY21                  (0x36, 0x36, 0x36);
+    static const Color GRAY22                  (0x38, 0x38, 0x38);
+    static const Color GREY22                  (0x38, 0x38, 0x38);
+    static const Color GRAY23                  (0x3B, 0x3B, 0x3B);
+    static const Color GREY23                  (0x3B, 0x3B, 0x3B);
+    static const Color GRAY24                  (0x3D, 0x3D, 0x3D);
+    static const Color GREY24                  (0x3D, 0x3D, 0x3D);
+    static const Color GRAY25                  (0x40, 0x40, 0x40);
+    static const Color GREY25                  (0x40, 0x40, 0x40);
+    static const Color GRAY26                  (0x42, 0x42, 0x42);
+    static const Color GREY26                  (0x42, 0x42, 0x42);
+    static const Color GRAY27                  (0x45, 0x45, 0x45);
+    static const Color GREY27                  (0x45, 0x45, 0x45);
+    static const Color GRAY28                  (0x47, 0x47, 0x47);
+    static const Color GREY28                  (0x47, 0x47, 0x47);
+    static const Color GRAY29                  (0x4A, 0x4A, 0x4A);
+    static const Color GREY29                  (0x4A, 0x4A, 0x4A);
+    static const Color GRAY30                  (0x4D, 0x4D, 0x4D);
+    static const Color GREY30                  (0x4D, 0x4D, 0x4D);
+    static const Color GRAY31                  (0x4F, 0x4F, 0x4F);
+    static const Color GREY31                  (0x4F, 0x4F, 0x4F);
+    static const Color GRAY32                  (0x52, 0x52, 0x52);
+    static const Color GREY32                  (0x52, 0x52, 0x52);
+    static const Color GRAY33                  (0x54, 0x54, 0x54);
+    static const Color GREY33                  (0x54, 0x54, 0x54);
+    static const Color GRAY34                  (0x57, 0x57, 0x57);
+    static const Color GREY34                  (0x57, 0x57, 0x57);
+    static const Color GRAY35                  (0x59, 0x59, 0x59);
+    static const Color GREY35                  (0x59, 0x59, 0x59);
+    static const Color GRAY36                  (0x5C, 0x5C, 0x5C);
+    static const Color GREY36                  (0x5C, 0x5C, 0x5C);
+    static const Color GRAY37                  (0x5E, 0x5E, 0x5E);
+    static const Color GREY37                  (0x5E, 0x5E, 0x5E);
+    static const Color GRAY38                  (0x61, 0x61, 0x61);
+    static const Color GREY38                  (0x61, 0x61, 0x61);
+    static const Color GRAY39                  (0x63, 0x63, 0x63);
+    static const Color GREY39                  (0x63, 0x63, 0x63);
+    static const Color GRAY40                  (0x66, 0x66, 0x66);
+    static const Color GREY40                  (0x66, 0x66, 0x66);
+    static const Color GRAY41                  (0x69, 0x69, 0x69);
+    static const Color GREY41                  (0x69, 0x69, 0x69);
+    static const Color GRAY42                  (0x6B, 0x6B, 0x6B);
+    static const Color GREY42                  (0x6B, 0x6B, 0x6B);
+    static const Color GRAY43                  (0x6E, 0x6E, 0x6E);
+    static const Color GREY43                  (0x6E, 0x6E, 0x6E);
+    static const Color GRAY44                  (0x70, 0x70, 0x70);
+    static const Color GREY44                  (0x70, 0x70, 0x70);
+    static const Color GRAY45                  (0x73, 0x73, 0x73);
+    static const Color GREY45                  (0x73, 0x73, 0x73);
+    static const Color GRAY46                  (0x75, 0x75, 0x75);
+    static const Color GREY46                  (0x75, 0x75, 0x75);
+    static const Color GRAY47                  (0x78, 0x78, 0x78);
+    static const Color GREY47                  (0x78, 0x78, 0x78);
+    static const Color GRAY48                  (0x7A, 0x7A, 0x7A);
+    static const Color GREY48                  (0x7A, 0x7A, 0x7A);
+    static const Color GRAY49                  (0x7D, 0x7D, 0x7D);
+    static const Color GREY49                  (0x7D, 0x7D, 0x7D);
+    static const Color GRAY50                  (0x7F, 0x7F, 0x7F);
+    static const Color GREY50                  (0x7F, 0x7F, 0x7F);
+    static const Color GRAY51                  (0x82, 0x82, 0x82);
+    static const Color GREY51                  (0x82, 0x82, 0x82);
+    static const Color GRAY52                  (0x85, 0x85, 0x85);
+    static const Color GREY52                  (0x85, 0x85, 0x85);
+    static const Color GRAY53                  (0x87, 0x87, 0x87);
+    static const Color GREY53                  (0x87, 0x87, 0x87);
+    static const Color GRAY54                  (0x8A, 0x8A, 0x8A);
+    static const Color GREY54                  (0x8A, 0x8A, 0x8A);
+    static const Color GRAY55                  (0x8C, 0x8C, 0x8C);
+    static const Color GREY55                  (0x8C, 0x8C, 0x8C);
+    static const Color GRAY56                  (0x8F, 0x8F, 0x8F);
+    static const Color GREY56                  (0x8F, 0x8F, 0x8F);
+    static const Color GRAY57                  (0x91, 0x91, 0x91);
+    static const Color GREY57                  (0x91, 0x91, 0x91);
+    static const Color GRAY58                  (0x94, 0x94, 0x94);
+    static const Color GREY58                  (0x94, 0x94, 0x94);
+    static const Color GRAY59                  (0x96, 0x96, 0x96);
+    static const Color GREY59                  (0x96, 0x96, 0x96);
+    static const Color GRAY60                  (0x99, 0x99, 0x99);
+    static const Color GREY60                  (0x99, 0x99, 0x99);
+    static const Color GRAY61                  (0x9C, 0x9C, 0x9C);
+    static const Color GREY61                  (0x9C, 0x9C, 0x9C);
+    static const Color GRAY62                  (0x9E, 0x9E, 0x9E);
+    static const Color GREY62                  (0x9E, 0x9E, 0x9E);
+    static const Color GRAY63                  (0xA1, 0xA1, 0xA1);
+    static const Color GREY63                  (0xA1, 0xA1, 0xA1);
+    static const Color GRAY64                  (0xA3, 0xA3, 0xA3);
+    static const Color GREY64                  (0xA3, 0xA3, 0xA3);
+    static const Color GRAY65                  (0xA6, 0xA6, 0xA6);
+    static const Color GREY65                  (0xA6, 0xA6, 0xA6);
+    static const Color GRAY66                  (0xA8, 0xA8, 0xA8);
+    static const Color GREY66                  (0xA8, 0xA8, 0xA8);
+    static const Color GRAY67                  (0xAB, 0xAB, 0xAB);
+    static const Color GREY67                  (0xAB, 0xAB, 0xAB);
+    static const Color GRAY68                  (0xAD, 0xAD, 0xAD);
+    static const Color GREY68                  (0xAD, 0xAD, 0xAD);
+    static const Color GRAY69                  (0xB0, 0xB0, 0xB0);
+    static const Color GREY69                  (0xB0, 0xB0, 0xB0);
+    static const Color GRAY70                  (0xB3, 0xB3, 0xB3);
+    static const Color GREY70                  (0xB3, 0xB3, 0xB3);
+    static const Color GRAY71                  (0xB5, 0xB5, 0xB5);
+    static const Color GREY71                  (0xB5, 0xB5, 0xB5);
+    static const Color GRAY72                  (0xB8, 0xB8, 0xB8);
+    static const Color GREY72                  (0xB8, 0xB8, 0xB8);
+    static const Color GRAY73                  (0xBA, 0xBA, 0xBA);
+    static const Color GREY73                  (0xBA, 0xBA, 0xBA);
+    static const Color GRAY74                  (0xBD, 0xBD, 0xBD);
+    static const Color GREY74                  (0xBD, 0xBD, 0xBD);
+    static const Color GRAY75                  (0xBF, 0xBF, 0xBF);
+    static const Color GREY75                  (0xBF, 0xBF, 0xBF);
+    static const Color GRAY76                  (0xC2, 0xC2, 0xC2);
+    static const Color GREY76                  (0xC2, 0xC2, 0xC2);
+    static const Color GRAY77                  (0xC4, 0xC4, 0xC4);
+    static const Color GREY77                  (0xC4, 0xC4, 0xC4);
+    static const Color GRAY78                  (0xC7, 0xC7, 0xC7);
+    static const Color GREY78                  (0xC7, 0xC7, 0xC7);
+    static const Color GRAY79                  (0xC9, 0xC9, 0xC9);
+    static const Color GREY79                  (0xC9, 0xC9, 0xC9);
+    static const Color GRAY80                  (0xCC, 0xCC, 0xCC);
+    static const Color GREY80                  (0xCC, 0xCC, 0xCC);
+    static const Color GRAY81                  (0xCF, 0xCF, 0xCF);
+    static const Color GREY81                  (0xCF, 0xCF, 0xCF);
+    static const Color GRAY82                  (0xD1, 0xD1, 0xD1);
+    static const Color GREY82                  (0xD1, 0xD1, 0xD1);
+    static const Color GRAY83                  (0xD4, 0xD4, 0xD4);
+    static const Color GREY83                  (0xD4, 0xD4, 0xD4);
+    static const Color GRAY84                  (0xD6, 0xD6, 0xD6);
+    static const Color GREY84                  (0xD6, 0xD6, 0xD6);
+    static const Color GRAY85                  (0xD9, 0xD9, 0xD9);
+    static const Color GREY85                  (0xD9, 0xD9, 0xD9);
+    static const Color GRAY86                  (0xDB, 0xDB, 0xDB);
+    static const Color GREY86                  (0xDB, 0xDB, 0xDB);
+    static const Color GRAY87                  (0xDE, 0xDE, 0xDE);
+    static const Color GREY87                  (0xDE, 0xDE, 0xDE);
+    static const Color GRAY88                  (0xE0, 0xE0, 0xE0);
+    static const Color GREY88                  (0xE0, 0xE0, 0xE0);
+    static const Color GRAY89                  (0xE3, 0xE3, 0xE3);
+    static const Color GREY89                  (0xE3, 0xE3, 0xE3);
+    static const Color GRAY90                  (0xE5, 0xE5, 0xE5);
+    static const Color GREY90                  (0xE5, 0xE5, 0xE5);
+    static const Color GRAY91                  (0xE8, 0xE8, 0xE8);
+    static const Color GREY91                  (0xE8, 0xE8, 0xE8);
+    static const Color GRAY92                  (0xEB, 0xEB, 0xEB);
+    static const Color GREY92                  (0xEB, 0xEB, 0xEB);
+    static const Color GRAY93                  (0xED, 0xED, 0xED);
+    static const Color GREY93                  (0xED, 0xED, 0xED);
+    static const Color GRAY94                  (0xF0, 0xF0, 0xF0);
+    static const Color GREY94                  (0xF0, 0xF0, 0xF0);
+    static const Color GRAY95                  (0xF2, 0xF2, 0xF2);
+    static const Color GREY95                  (0xF2, 0xF2, 0xF2);
+    static const Color GRAY96                  (0xF5, 0xF5, 0xF5);
+    static const Color GREY96                  (0xF5, 0xF5, 0xF5);
+    static const Color GRAY97                  (0xF7, 0xF7, 0xF7);
+    static const Color GREY97                  (0xF7, 0xF7, 0xF7);
+    static const Color GRAY98                  (0xFA, 0xFA, 0xFA);
+    static const Color GREY98                  (0xFA, 0xFA, 0xFA);
+    static const Color GRAY99                  (0xFC, 0xFC, 0xFC);
+    static const Color GREY99                  (0xFC, 0xFC, 0xFC);
+    static const Color GRAY100                 (0xFF, 0xFF, 0xFF);
+    static const Color GREY100                 (0xFF, 0xFF, 0xFF);
+    static const Color DARKGREY                (0xA9, 0xA9, 0xA9);
+    static const Color DARKGRAY                (0xA9, 0xA9, 0xA9);
+    static const Color DARKBLUE                (0x8B, 0x00, 0x00);
+    static const Color DARKCYAN                (0x8B, 0x8B, 0x00);
+    static const Color DARKMAGENTA             (0x8B, 0x00, 0x8B);
+    static const Color DARKRED                 (0x00, 0x00, 0x8B);
+    static const Color LIGHTGREEN              (0x90, 0xEE, 0x90);
+  }
+}
 #endif
